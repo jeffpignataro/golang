@@ -1,3 +1,3 @@
-module github.com/jeffpignataro/golang
+module cmd/examples/hello-world
 
-go 1.14
+go 1.18
