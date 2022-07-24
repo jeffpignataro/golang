@@ -6,12 +6,16 @@ import (
 	helloworldapi_endpoints "github.com/jeffpignataro/golang/pkg/examples/hello-world-api/endpoints"
 )
 
-func Run() {
+// Handler for http requests
+type Handler struct {
+	mux *http.ServeMux
+}
 
-	mux := http.NewServeMux()
+func New(s *http.ServeMux) *Handler {
+	h := Handler{s}
+	s.HandleFunc("/welcome", helloworldapi_endpoints.Welcome)
+	s.HandleFunc("/posts", helloworldapi_endpoints.Posts)
+	s.HandleFunc("/healthz", helloworldapi_endpoints.Healthz)
 
-	mux.HandleFunc("/welcome", helloworldapi_endpoints.Welcome)
-	mux.HandleFunc("/posts", helloworldapi_endpoints.Posts)
-
-	http.ListenAndServe(":5050", mux)
+	return &h
 }
