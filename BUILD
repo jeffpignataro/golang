@@ -1,5 +1,6 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
+# gazelle:prefix github.com/jeffpignataro/golang
 gazelle(name = "gazelle")
 
 gazelle(
