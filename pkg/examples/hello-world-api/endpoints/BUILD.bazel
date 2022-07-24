@@ -1,0 +1,11 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "endpoints",
+    srcs = [
+        "posts.go",
+        "welcome.go",
+    ],
+    importpath = "github.com/jeffpignataro/golang/pkg/examples/hello-world-api/endpoints",
+    visibility = ["//visibility:public"],
+)
