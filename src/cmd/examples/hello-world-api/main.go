@@ -20,11 +20,11 @@ func registerHooks(lifecycle fx.Lifecycle, mux *http.ServeMux) {
 	lifecycle.Append(
 		fx.Hook{
 			OnStart: func(ctx context.Context) error {
-				go http.ListenAndServe(":8080", mux)
+				go http.ListenAndServe(":9001", mux)
 				return nil
 			},
 			OnStop: func(ctx context.Context) error {
-				srv := http.Server{Addr: "8080", Handler: mux}
+				srv := http.Server{Addr: "9001", Handler: mux}
 				go srv.Shutdown(ctx)
 				return nil
 			},
