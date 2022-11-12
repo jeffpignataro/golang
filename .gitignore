@@ -45,3 +45,7 @@
 user.bazelrc
 
 /bazel*/
+
+# fresh
+tmp
+api-service.log

@@ -1,0 +1,23 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "example-gui_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/jeffpignataro/golang/ui/example-gui",
+    visibility = ["//visibility:private"],
+    deps = [
+        "@org_gioui//font/gofont:go_default_library",
+        "@org_gioui//io/system:go_default_library",
+        "@org_gioui//layout:go_default_library",
+        "@org_gioui//op:go_default_library",
+        "@org_gioui//op/clip:go_default_library",
+        "@org_gioui//op/paint:go_default_library",
+        "@org_gioui//text:go_default_library",
+    ],
+)
+
+go_binary(
+    name = "example-gui",
+    embed = [":example-gui_lib"],
+    visibility = ["//visibility:public"],
+)

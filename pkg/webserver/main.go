@@ -10,6 +10,7 @@ import (
 	"go.uber.org/fx/fxevent"
 	"go.uber.org/zap"
 
+	"github.com/jeffpignataro/golang/pkg/helpers"
 	"github.com/jeffpignataro/golang/pkg/webserver/endpoints"
 	"github.com/jeffpignataro/golang/pkg/webserver/mux"
 	"github.com/jeffpignataro/golang/pkg/webserver/routing"
@@ -38,7 +39,8 @@ func New() {
 }
 
 func NewHTTPServer(lc fx.Lifecycle, mux *http.ServeMux, log *zap.Logger) *http.Server {
-	srv := &http.Server{Addr: ":9001", Handler: mux}
+	port, _ := helpers.LookupEnv("PORT", "9001")
+	srv := &http.Server{Addr: fmt.Sprintf(":%s", port), Handler: mux}
 	lc.Append(fx.Hook{
 		OnStart: func(ctx context.Context) error {
 			ln, err := net.Listen("tcp", srv.Addr)

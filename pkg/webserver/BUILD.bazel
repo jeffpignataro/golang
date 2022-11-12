@@ -1,0 +1,17 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "webserver",
+    srcs = ["main.go"],
+    importpath = "github.com/jeffpignataro/golang/pkg/webserver",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//pkg/helpers",
+        "//pkg/webserver/endpoints",
+        "//pkg/webserver/mux",
+        "//pkg/webserver/routing",
+        "@org_uber_go_fx//:fx",
+        "@org_uber_go_fx//fxevent",
+        "@org_uber_go_zap//:zap",
+    ],
+)
