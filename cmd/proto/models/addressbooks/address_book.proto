@@ -1,0 +1,11 @@
+syntax="proto3";
+package addressbook;
+import "github.com/jeffpignataro/golang/cmd/proto/models/persons/personpb";
+
+option go_package="github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbookpb";
+
+
+// Our address book file is just one of these.
+message AddressBook {
+  repeated person.Person people = 1;
+}
