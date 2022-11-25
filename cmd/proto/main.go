@@ -3,14 +3,21 @@ package main
 import (
 	"fmt"
 
-	addressbookpb "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbookpb"
-	personpb "github.com/jeffpignataro/golang/cmd/proto/models/persons/personpb"
+	"github.com/jeffpignataro/golang/cmd/proto/models/persons/person"
 )
 
 func main() {
-	var a addressbookpb.AddressBook
-	var p *personpb.Person
-	p.Name = "Jeff Pignataro"
-	a.People[0] = p
-	fmt.Println(a.People[0])
+	// var a addressbook.AddressBook
+	p := person.Person{
+		Name:  "My Name",
+		Id:    0,
+		Email: "my@email.com",
+		Phones: []*person.Person_PhoneNumber{
+			&person.Person_PhoneNumber{
+				Number: "123-456-7890",
+				Type:   person.Person_HOME,
+			},
+		},
+	}
+	fmt.Println(p)
 }

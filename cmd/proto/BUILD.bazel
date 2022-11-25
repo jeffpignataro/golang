@@ -6,8 +6,8 @@ go_library(
     importpath = "github.com/jeffpignataro/golang/cmd/proto",
     visibility = ["//visibility:private"],
     deps = [
-        "//cmd/proto/models/addressbooks:addressbookpb",
-        "//cmd/proto/models/persons:personpb",
+        "//cmd/proto/models/addressbooks:addressbook",
+        "//cmd/proto/models/persons:person",
     ],
 )
 
