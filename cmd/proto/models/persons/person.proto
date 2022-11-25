@@ -1,8 +1,9 @@
 syntax="proto3";
-package person;
+option go_package="github.com/jeffpignataro/golang/cmd/proto/models/persons/personpb";
+
 import "google/protobuf/timestamp.proto";
 
-option go_package="github.com/jeffpignataro/golang/cmd/proto/models/persons/personpb";
+package person;
 
 message Person {
   string name = 1;

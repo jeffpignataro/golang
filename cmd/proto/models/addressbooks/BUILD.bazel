@@ -6,6 +6,7 @@ proto_library(
     name = "addressbookpb_proto",
     srcs = ["address_book.proto"],
     visibility = ["//visibility:public"],
+    deps = ["//cmd/proto/models/persons:personpb_proto"],
 )
 
 go_proto_library(
@@ -13,7 +14,7 @@ go_proto_library(
     importpath = "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbookpb",
     proto = ":addressbookpb_proto",
     visibility = ["//visibility:public"],
-    deps = ["//github.com/jeffpignataro/golang/cmd/proto/models/persons/personpb:person"],
+    deps = ["//cmd/proto/models/persons:personpb"],
 )
 
 go_library(
