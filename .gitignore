@@ -49,3 +49,5 @@ user.bazelrc
 # fresh
 tmp
 api-service.log
+
+/bazel-*
