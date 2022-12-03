@@ -1,15 +1,15 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_library(
-    name = "cli-demo_lib",
+    name = "scavenger_lib",
     srcs = ["main.go"],
-    importpath = "github.com/jeffpignataro/golang/cmd/cli-demo",
+    importpath = "github.com/jeffpignataro/golang/cmd/scavenger",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_urfave_cli_v2//:cli"],
+    deps = ["//pkg/rest"],
 )
 
 go_binary(
-    name = "cli-demo",
-    embed = [":cli-demo_lib"],
+    name = "scavenger",
+    embed = [":scavenger_lib"],
     visibility = ["//visibility:public"],
 )
