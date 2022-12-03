@@ -5,10 +5,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/proto",
     visibility = ["//visibility:private"],
-    deps = [
-        "//cmd/proto/models/addressbooks:addressbook",
-        "//cmd/proto/models/persons:person",
-    ],
+    deps = ["//cmd/proto/models/persons:person"],
 )
 
 go_binary(

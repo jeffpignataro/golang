@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cli-demo_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/jeffpignataro/golang/cmd/cli-demo",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_urfave_cli//:go_default_library"],
+)
+
+go_binary(
+    name = "cli-demo",
+    embed = [":cli-demo_lib"],
+    visibility = ["//visibility:public"],
+)
