@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 )
 
@@ -55,7 +54,7 @@ func Call(url string, method string, body *string, auth *Authentication) ([]byte
 		return nil, err
 	}
 
-	responseData, err := ioutil.ReadAll(p.Body)
+	responseData, err := io.ReadAll(p.Body)
 	if err != nil {
 		fmt.Print(err.Error())
 		return nil, err
