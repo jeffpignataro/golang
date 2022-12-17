@@ -8,16 +8,40 @@ import (
 	"net/http"
 )
 
-func Call(url string, method string, body string) ([]byte, error) {
+type Authentication struct {
+	Authenticate bool
+	Type         *string
+	Key          *string
+}
+
+func NoAuth() Authentication {
+	return Authentication{
+		Authenticate: false,
+	}
+}
+
+func NewAuthentication(a bool, t *string, k *string) Authentication {
+	return Authentication{
+		Authenticate: a,
+		Type:         t,
+		Key:          k,
+	}
+}
+
+func Call(url string, method string, body *string, auth *Authentication) ([]byte, error) {
 	c := http.Client{}
 
-	var b io.Reader
-	if body != "" {
-		j := []byte(body)
-		b = bytes.NewReader(j)
+	var reader io.Reader
+	if body != nil {
+		j := []byte(*body)
+		reader = bytes.NewReader(j)
 	}
 
-	r, err := http.NewRequest(method, url, b)
+	r, err := http.NewRequest(method, url, reader)
+
+	if auth.Authenticate {
+		r.Header.Add("Authorization", fmt.Sprintf("%s %s", *auth.Type, *auth.Key))
+	}
 
 	if err != nil {
 		fmt.Print(err.Error())
@@ -39,18 +63,18 @@ func Call(url string, method string, body string) ([]byte, error) {
 	return responseData, nil
 }
 
-func Get(url string) ([]byte, error) {
-	return Call(url, http.MethodGet, "")
+func Get(url string, auth Authentication) ([]byte, error) {
+	return Call(url, http.MethodGet, nil, &auth)
 }
 
-func Delete(url string) ([]byte, error) {
-	return Call(url, http.MethodDelete, "")
+func Delete(url string, auth Authentication) ([]byte, error) {
+	return Call(url, http.MethodDelete, nil, &auth)
 }
 
-func Post(url string, body string) ([]byte, error) {
-	return Call(url, http.MethodPost, body)
+func Post(url string, body string, auth Authentication) ([]byte, error) {
+	return Call(url, http.MethodPost, &body, &auth)
 }
 
-func Patch(url string, body string) ([]byte, error) {
-	return Call(url, http.MethodPatch, body)
+func Patch(url string, body string, auth Authentication) ([]byte, error) {
+	return Call(url, http.MethodPatch, &body, &auth)
 }
