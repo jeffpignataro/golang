@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	r, err := rest.Get("https://www.google.com")
+	r, err := rest.Get("https://www.google.com", nil)
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)

@@ -38,7 +38,7 @@ func Call(url string, method string, body *string, auth *Authentication) ([]byte
 
 	r, err := http.NewRequest(method, url, reader)
 
-	if auth.Authenticate {
+	if auth != nil && auth.Authenticate {
 		r.Header.Add("Authorization", fmt.Sprintf("%s %s", *auth.Type, *auth.Key))
 	}
 
@@ -62,18 +62,18 @@ func Call(url string, method string, body *string, auth *Authentication) ([]byte
 	return responseData, nil
 }
 
-func Get(url string, auth Authentication) ([]byte, error) {
-	return Call(url, http.MethodGet, nil, &auth)
+func Get(url string, auth *Authentication) ([]byte, error) {
+	return Call(url, http.MethodGet, nil, auth)
 }
 
-func Delete(url string, auth Authentication) ([]byte, error) {
-	return Call(url, http.MethodDelete, nil, &auth)
+func Delete(url string, auth *Authentication) ([]byte, error) {
+	return Call(url, http.MethodDelete, nil, auth)
 }
 
-func Post(url string, body string, auth Authentication) ([]byte, error) {
-	return Call(url, http.MethodPost, &body, &auth)
+func Post(url string, body string, auth *Authentication) ([]byte, error) {
+	return Call(url, http.MethodPost, &body, auth)
 }
 
-func Patch(url string, body string, auth Authentication) ([]byte, error) {
-	return Call(url, http.MethodPatch, &body, &auth)
+func Patch(url string, body string, auth *Authentication) ([]byte, error) {
+	return Call(url, http.MethodPatch, &body, auth)
 }
