@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/jeffpignataro/golang/pkg/do-a-thing"
+	doathing "github.com/jeffpignataro/golang/pkg/do-a-thing"
 	"github.com/urfave/cli/v2"
 )
 
