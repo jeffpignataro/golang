@@ -3,6 +3,8 @@ on:
   workflow_run:
     workflows:
       - "Build CLI Demo"
+    types:
+      - "completed"
   workflow_dispatch:
 
 jobs:

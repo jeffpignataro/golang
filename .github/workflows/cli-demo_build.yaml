@@ -42,5 +42,5 @@ jobs:
         with:
           name: upload-binary
           path: |
-            bazel-bin/cmd/cli-demo/cli-demo_/cli-demo
+            ./bazel-bin/cmd/cli-demo/cli-demo_/cli-demo
           retention-days: 1
