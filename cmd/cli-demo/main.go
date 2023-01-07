@@ -7,6 +7,8 @@ import (
 	"time"
 
 	"github.com/urfave/cli/v2"
+
+	doathing "github.com/jeffpignataro/golang/pkg/doathing"
 )
 
 var flag1Value string
@@ -30,6 +32,12 @@ func main() {
 					fmt.Printf("Sub command: %s", c.Args().First())
 					return nil
 				},
+			},
+			{
+				Name:    "do-a-thing",
+				Aliases: []string{"d"},
+				Usage:   "Do a thing from a package",
+				Action:  doathing,
 			},
 		},
 		Flags: []cli.Flag{
