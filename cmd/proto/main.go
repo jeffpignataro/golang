@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jeffpignataro/golang/cmd/proto/models/persons/person"
+	"github.com/jeffpignataro/golang/cmd/proto/models/persons"
 )
 
 func main() {

@@ -40,6 +40,8 @@ github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/
 github.com/google/go-cmp v0.5.6 h1:BKbKCqvP6I+rmFHt06ZmyQtvB8xAkWdhFyr0ZUNZcxQ=
 github.com/google/renameio v0.1.0/go.mod h1:KWCgfxg9yswjAJkECMjeO8J8rahYeXnNhOm40UhjYkI=
 github.com/google/uuid v1.1.2/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/jeffpignataro/golang/cmd/proto/models/persons v0.0.0-20230107193123-f92fe6d9d2df h1:P675s2aiDikiAo+7vFhI2URK93iJNZ9dap219cXsSGg=
+github.com/jeffpignataro/golang/cmd/proto/models/persons v0.0.0-20230107193123-f92fe6d9d2df/go.mod h1:nPC7iUcFFMWc9H+HgXbIFJTEhWjE/jdwBpslYK+SYto=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230107192851-33f2e68a7df6 h1:e5fzGKhi3qmqgpryoktmVPRsBBAiZVyjZcYVpW6QrQE=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230107192851-33f2e68a7df6/go.mod h1:OT23oW3zajWXBBGerLkWW7DevMFQ35fOiu13yrWXbQI=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=

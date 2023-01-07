@@ -11,7 +11,10 @@ require (
 	google.golang.org/protobuf v1.28.1
 )
 
-require github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230107192851-33f2e68a7df6 // indirect
+require (
+	github.com/jeffpignataro/golang/cmd/proto/models/persons v0.0.0-20230107193123-f92fe6d9d2df // indirect
+	github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230107192851-33f2e68a7df6 // indirect
+)
 
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
