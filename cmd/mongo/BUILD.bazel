@@ -6,3 +6,10 @@ go_library(
     importpath = "workspace/cmd/mongo",
     visibility = ["//visibility:public"],
 )
+
+go_library(
+    name = "mongo_lib",
+    srcs = ["main.go"],
+    importpath = "workspace/cmd/mongo",
+    visibility = ["//visibility:private"],
+)

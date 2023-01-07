@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"workspace/bazel-bin/cmd/proto/models/persons/person_go_proto_/github.com/jeffpignataro/golang/cmd/proto/models/persons/person"
+	"workspace/cmd/proto/models/persons/person"
 )
 
 func main() {

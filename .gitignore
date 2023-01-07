@@ -44,10 +44,8 @@
 # User-specific .bazelrc
 user.bazelrc
 
-/bazel*/
+bazel-*
 
 # fresh
 tmp
 api-service.log
-
-/bazel-*

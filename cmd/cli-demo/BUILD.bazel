@@ -6,7 +6,7 @@ go_library(
     importpath = "workspace/cmd/cli-demo",
     visibility = ["//visibility:private"],
     deps = [
-        "//vendor/do-a-thing",
+        "//pkg/do-a-thing",
         "@com_github_urfave_cli_v2//:cli",
     ],
 )
