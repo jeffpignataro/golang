@@ -1,0 +1,43 @@
+on:
+  pull_request:
+    branches:
+      - "main"
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+jobs:
+  bazel-build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./java-tutorial
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: bazelbuild/setup-bazelisk@v2
+      - name: Mount bazel cache
+        uses: actions/cache@v3
+        with:
+          path: "~/.cache/bazel"
+          key: Cli-Demo-Cache
+      - name: Test
+        run: |
+          bazel test //...
+          TEST_RES=$?
+          set -e
+          # Return codes for commands bazel build, bazel test:
+          # 1 - Build failed.
+          # 3 - Build OK, but some tests failed or timed out.
+          # 4 - Build successful but no tests were found even though testing was requested.
+          if [ ! $TEST_RES -eq 4 ] && [ ! $TEST_RES -eq 0 ]
+          then
+            echo 'Tests failed.'
+            exit 1
+          else
+            echo 'Tests succeeded or no tests were found.'
+          fi
+      - name: Build
+        run: bazel build //...
