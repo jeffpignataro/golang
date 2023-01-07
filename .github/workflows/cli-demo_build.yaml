@@ -32,22 +32,7 @@ jobs:
           path: "~/.cache/bazel"
           key: Cli-Demo-Cache
       - name: Test
-        run: |
-          bazel test //...
-          TEST_RES=$?
-          set -e
-          # Return codes for commands bazel build, bazel test:
-          # 1 - Build failed.
-          # 3 - Build OK, but some tests failed or timed out.
-          # 4 - Build successful but no tests were found even though testing was requested.
-          if [ ! $TEST_RES -eq 4 ] && [ ! $TEST_RES -eq 0 ]
-          then
-            echo 'Tests failed.'
-            exit 1
-          else
-            echo 'Tests succeeded or no tests were found.'
-            exit 0
-          fi
+        run: bazel query "tests(//...)" | xargs -I {} bazel test
       - name: Build
         if: success()
         run: bazel build //...
