@@ -18,7 +18,10 @@ jobs:
 
     steps:
       - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v3
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: cli-demo_build.yml
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
