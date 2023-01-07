@@ -40,4 +40,5 @@ jobs:
             echo 'Tests succeeded or no tests were found.'
           fi
       - name: Build
+        if: success()
         run: bazel build //...
