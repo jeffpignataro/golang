@@ -1,5 +1,5 @@
 syntax="proto3";
-option go_package="github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbook";
+option go_package="workspace/cmd/proto/models/addressbooks/addressbook";
 
 import "cmd/proto/models/persons/person.proto";
 

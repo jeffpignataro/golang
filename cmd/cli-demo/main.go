@@ -6,7 +6,8 @@ import (
 	"os"
 	"time"
 
-	doathing "github.com/jeffpignataro/golang/pkg/do-a-thing"
+	doathing "workspace/pkg/do-a-thing"
+
 	"github.com/urfave/cli/v2"
 )
 
@@ -36,7 +37,10 @@ func main() {
 				Name:    "do-a-thing",
 				Aliases: []string{"d"},
 				Usage:   "Do a thing from a package",
-				Action:  doathing.doathing(),
+				Action: func(c *cli.Context) error {
+					fmt.Println(doathing.Doathing())
+					return nil
+				},
 			},
 		},
 		Flags: []cli.Flag{

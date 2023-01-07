@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "webserver",
     srcs = ["main.go"],
-    importpath = "github.com/jeffpignataro/golang/pkg/webserver",
+    importpath = "workspace/pkg/webserver",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/helpers",

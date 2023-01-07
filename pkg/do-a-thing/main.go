@@ -1,5 +1,5 @@
 package doathing
 
-func doathing() string {
+func Doathing() string {
 	return "Doing a thing..."
 }

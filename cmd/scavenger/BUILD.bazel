@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "scavenger_lib",
     srcs = ["main.go"],
-    importpath = "github.com/jeffpignataro/golang/cmd/scavenger",
+    importpath = "workspace/cmd/scavenger",
     visibility = ["//visibility:private"],
     deps = ["//pkg/rest"],
 )

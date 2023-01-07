@@ -11,7 +11,7 @@ proto_library(
 
 go_proto_library(
     name = "addressbook_go_proto",
-    importpath = "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbook",
+    importpath = "workspace/cmd/proto/models/addressbooks/addressbook",
     proto = ":addressbook_proto",
     visibility = ["//visibility:public"],
     deps = ["//cmd/proto/models/persons:person"],
@@ -20,6 +20,6 @@ go_proto_library(
 go_library(
     name = "addressbook",
     embed = [":addressbook_go_proto"],
-    importpath = "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbook",
+    importpath = "workspace/cmd/proto/models/addressbooks/addressbook",
     visibility = ["//visibility:public"],
 )

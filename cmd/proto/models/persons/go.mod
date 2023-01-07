@@ -1,3 +1,3 @@
-module github.com/jeffpignataro/golang/cmd/proto/models/persons
+module workspace/cmd/proto/models/persons
 
 go 1.19
