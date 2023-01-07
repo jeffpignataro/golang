@@ -1,4 +1,8 @@
+name: Release CLI demo
 on:
+  workflow_run:
+    workflows:
+      - "Build CLI Demo"
   workflow_dispatch:
 
 jobs:
@@ -11,4 +15,8 @@ jobs:
         working-directory: ./
 
     steps:
-      - run: echo "placeholder"
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v3
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')

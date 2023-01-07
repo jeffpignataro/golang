@@ -1,3 +1,4 @@
+name: Build CLI Demo
 on:
   pull_request:
     branches:
@@ -36,3 +37,10 @@ jobs:
       - name: Build
         if: success()
         run: bazel build //...
+      - name: Store artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: upload-binary
+          path: |
+            bazel-bin/cmd/cli-demo/cli-demo_/cli-demo
+          retention-days: 1
