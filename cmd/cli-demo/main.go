@@ -6,9 +6,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/jeffpignataro/golang/pkg/do-a-thing"
 	"github.com/urfave/cli/v2"
-
-	doathing "github.com/jeffpignataro/golang/pkg/doathing"
 )
 
 var flag1Value string
@@ -37,7 +36,7 @@ func main() {
 				Name:    "do-a-thing",
 				Aliases: []string{"d"},
 				Usage:   "Do a thing from a package",
-				Action:  doathing,
+				Action:  doathing.doathing(),
 			},
 		},
 		Flags: []cli.Flag{
