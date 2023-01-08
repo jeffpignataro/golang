@@ -6,8 +6,6 @@ import (
 	"os"
 	"time"
 
-	doathing "workspace/pkg/do-a-thing"
-
 	"github.com/urfave/cli/v2"
 )
 
@@ -23,26 +21,7 @@ func main() {
 		Version:        "",
 		Description:    "",
 		DefaultCommand: "",
-		Commands: []*cli.Command{
-			{
-				Name:    "sub",
-				Aliases: []string{"s"},
-				Usage:   "demo sub command",
-				Action: func(c *cli.Context) error {
-					fmt.Printf("Sub command: %s", c.Args().First())
-					return nil
-				},
-			},
-			{
-				Name:    "do-a-thing",
-				Aliases: []string{"d"},
-				Usage:   "Do a thing from a package",
-				Action: func(c *cli.Context) error {
-					fmt.Println(doathing.Doathing())
-					return nil
-				},
-			},
-		},
+		Commands:       Commands(&cli.Context{}),
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:        "flag1",
@@ -66,7 +45,7 @@ func main() {
 			if flag1Value == "" {
 				fmt.Printf("Hello %s", c.Args().Get(0))
 			} else {
-				fmt.Printf("%s", flag1Value)
+				fmt.Printf("This is a flag execution: %s", flag1Value)
 			}
 			return nil
 		},

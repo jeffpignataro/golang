@@ -2,7 +2,11 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_library(
     name = "cli-demo_lib",
-    srcs = ["main.go"],
+    srcs = [
+        "actions.go",
+        "main.go",
+        "subcommands.go",
+    ],
     importpath = "workspace/cmd/cli-demo",
     visibility = ["//visibility:private"],
     deps = [
