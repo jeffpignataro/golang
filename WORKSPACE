@@ -64,20 +64,6 @@ go_repository(
 )
 
 go_repository(
-    name = "com_github_shurcool_sanitized_anchor_name",
-    importpath = "github.com/shurcooL/sanitized_anchor_name",
-    sum = "h1:PdmoCO6wvbs+7yrJyMORt4/BmY5IYyJwS/kOiWx8mHo=",
-    version = "v1.0.0",
-)
-
-go_repository(
-    name = "com_github_urfave_cli",
-    importpath = "github.com/urfave/cli",
-    sum = "h1:p8Fspmz3iTctJstry1PYS3HVdllxnEzTEsgIgtxTrCk=",
-    version = "v1.22.10",
-)
-
-go_repository(
     name = "com_github_xrash_smetrics",
     importpath = "github.com/xrash/smetrics",
     sum = "h1:bAn7/zixMGCfxrRTfdpNzjtPYqr8smhKouy9mxVdGPU=",

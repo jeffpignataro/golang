@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cobra_lib",
+    srcs = ["main.go"],
+    importpath = "workspace/cmd/cobra",
+    visibility = ["//visibility:private"],
+    deps = ["//cmd/cobra/cmd"],
+)
+
+go_binary(
+    name = "cobra",
+    embed = [":cobra_lib"],
+    visibility = ["//visibility:public"],
+)

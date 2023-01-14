@@ -1,0 +1,11 @@
+{
+  "command": {
+    "name": "",
+    "aliases": [],
+    "subcommands": []
+  },
+  "action": {
+    "name": "",
+    "method": ""
+  }
+}

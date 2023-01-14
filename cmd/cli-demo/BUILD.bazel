@@ -4,8 +4,8 @@ go_library(
     name = "cli-demo_lib",
     srcs = [
         "actions.go",
+        "commands.go",
         "main.go",
-        "subcommands.go",
     ],
     importpath = "workspace/cmd/cli-demo",
     visibility = ["//visibility:private"],
