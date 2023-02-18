@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "19_lib",
+    srcs = ["main.go"],
+    importpath = "workspace/cmd/euler/19",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "19",
+    embed = [":19_lib"],
+    visibility = ["//visibility:public"],
+)

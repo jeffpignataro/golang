@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "bit-counting_lib",
+    srcs = ["main.go"],
+    importpath = "workspace/cmd/codewars/bit-counting",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "bit-counting",
+    embed = [":bit-counting_lib"],
+    visibility = ["//visibility:public"],
+)
