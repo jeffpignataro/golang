@@ -1,0 +1,13 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "addressbook",
+    srcs = ["address_book.pb.go"],
+    importpath = "golang/cmd/proto/models/addressbooks/addressbook",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//cmd/proto/models/persons:person",
+        "//vendor/google.golang.org/protobuf/reflect/protoreflect",
+        "//vendor/google.golang.org/protobuf/runtime/protoimpl",
+    ],
+)
