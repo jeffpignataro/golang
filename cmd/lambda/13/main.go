@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	thirteen "workspace/pkg/euler/13"
-
 	"github.com/aws/aws-lambda-go/lambda"
+	thirteen "golang/pkg/euler/13"
+	"strconv"
 )
 
 type MyEvent struct {
@@ -13,7 +13,10 @@ type MyEvent struct {
 }
 
 func HandleRequest(ctx context.Context, name MyEvent) (string, error) {
-	return thirteen.Run()
+	f := thirteen.Run()
+	s := strconv.FormatFloat(f, 'E', -1, 64)
+
+	return s, nil
 }
 
 func main() {

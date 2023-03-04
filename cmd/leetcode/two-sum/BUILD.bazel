@@ -3,6 +3,6 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "two-sum",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/leetcode/two-sum",
+    importpath = "golang/cmd/leetcode/two-sum",
     visibility = ["//visibility:public"],
 )

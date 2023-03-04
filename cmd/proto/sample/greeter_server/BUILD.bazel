@@ -3,11 +3,11 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "greeter_server_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/proto/sample/greeter_server",
+    importpath = "golang/cmd/proto/sample/greeter_server",
     visibility = ["//visibility:private"],
     deps = [
-        "//cmd/proto/sample/helloworld",
-        "@org_golang_google_grpc//:go_default_library",
+        "//vendor/google.golang.org/grpc",
+        "//vendor/google.golang.org/grpc/examples/helloworld/helloworld",
     ],
 )
 

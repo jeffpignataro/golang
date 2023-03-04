@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	helloworldapi "workspace/pkg/examples/hello-world-api"
+	helloworldapi "golang/pkg/examples/hello-world-api"
 
 	"go.uber.org/fx"
 )

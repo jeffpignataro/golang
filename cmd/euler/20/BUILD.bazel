@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "20_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/euler/20",
+    importpath = "golang/cmd/euler/20",
     visibility = ["//visibility:private"],
 )
 

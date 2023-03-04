@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "hello-world-api",
     srcs = ["webserver.go"],
-    importpath = "workspace/pkg/examples/hello-world-api",
+    importpath = "golang/pkg/examples/hello-world-api",
     visibility = ["//visibility:public"],
     deps = ["//pkg/examples/hello-world-api/endpoints"],
 )

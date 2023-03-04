@@ -49,3 +49,4 @@ bazel-*
 # fresh
 tmp
 api-service.log
+vendor/

@@ -3,11 +3,11 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "13_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/lambda/13",
+    importpath = "golang/cmd/lambda/13",
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/euler/13",
-        "@com_github_aws_aws_lambda_go//lambda:go_default_library",
+        "//vendor/github.com/aws/aws-lambda-go/lambda",
     ],
 )
 

@@ -1,6 +1,6 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix workspace
+# gazelle:prefix golang
 gazelle(name = "gazelle")
 
 gazelle(

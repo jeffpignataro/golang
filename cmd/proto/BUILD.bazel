@@ -1,9 +1,11 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
+# gazelle:resolve go golang/cmd/proto/models/persons/person //cmd/proto/models/persons:person
+
 go_library(
     name = "proto_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/proto",
+    importpath = "golang/cmd/proto",
     visibility = ["//visibility:private"],
     deps = ["//cmd/proto/models/persons:person"],
 )

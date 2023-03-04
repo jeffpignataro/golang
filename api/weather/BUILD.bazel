@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "weather_lib",
     srcs = ["main.go"],
-    importpath = "workspace/api/weather",
+    importpath = "golang/api/weather",
     visibility = ["//visibility:private"],
     deps = ["//pkg/webserver"],
 )

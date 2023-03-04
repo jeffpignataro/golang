@@ -3,7 +3,7 @@ package euler
 import (
 	"encoding/json"
 	"fmt"
-	"workspace/pkg/rest"
+	"golang/pkg/rest"
 )
 
 type Answer struct {

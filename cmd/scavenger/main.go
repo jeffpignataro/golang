@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"workspace/pkg/rest"
+	"golang/pkg/rest"
 )
 
 func main() {

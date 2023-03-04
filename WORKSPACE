@@ -87,8 +87,8 @@ go_repository(
 go_repository(
     name = "com_google_cloud_go_aiplatform",
     importpath = "cloud.google.com/go/aiplatform",
-    sum = "h1:QqHZT1IMldf/daXoSnkJWBIqGBsw50X+xP6HSVzLRPo=",
-    version = "v1.24.0",
+    sum = "h1:DBi3Jk9XjCJ4pkkLM4NqKgj3ozUL1wq4l+d3/jTGXAI=",
+    version = "v1.27.0",
 )
 
 go_repository(
@@ -178,8 +178,8 @@ go_repository(
 go_repository(
     name = "com_google_cloud_go_bigquery",
     importpath = "cloud.google.com/go/bigquery",
-    sum = "h1:u0fvz5ysJBe1jwUPI4LuPwAX+o+6fCUwf3ECeg6eDUQ=",
-    version = "v1.43.0",
+    sum = "h1:Wi4dITi+cf9VYp4VH2T9O41w0kCW0uQTELq2Z6tukN0=",
+    version = "v1.44.0",
 )
 
 go_repository(
@@ -430,8 +430,8 @@ go_repository(
 go_repository(
     name = "com_google_cloud_go_iam",
     importpath = "cloud.google.com/go/iam",
-    sum = "h1:k4MuwOsS7zGJJ+QfZ5vBK8SgHBAvYN/23BWsiihJ1vs=",
-    version = "v0.7.0",
+    sum = "h1:E2osAkZzxI/+8pZcxVLcDtAQx/u+hZXVryUaYQ5O0Kk=",
+    version = "v0.8.0",
 )
 
 go_repository(
@@ -829,8 +829,113 @@ go_repository(
 go_repository(
     name = "com_github_urfave_cli_v2",
     importpath = "github.com/urfave/cli/v2",
-    sum = "h1:xbrU7tAYviSpqeR3X4nEFWUdB/uDZ6DE+HxmRU7Xtyw=",
-    version = "v2.23.5",
+    sum = "h1:0gyJJEBYtCV87zI/x2nZCPyDxD51K6xM8SkwjHFCNEU=",
+    version = "v2.24.4",
+)
+
+go_repository(
+    name = "com_github_aws_aws_lambda_go",
+    importpath = "github.com/aws/aws-lambda-go",
+    sum = "h1:4CUdxGzvuQp0o8Zh7KtupB9XvCiiY8yKqJtzco+gsDw=",
+    version = "v1.38.0",
+)
+
+go_repository(
+    name = "com_github_cenkalti_backoff_v4",
+    importpath = "github.com/cenkalti/backoff/v4",
+    sum = "h1:cFAlzYUlVYDysBEH2T5hyJZMh3+5+WCBvSnK6Q8UtC4=",
+    version = "v4.1.3",
+)
+
+go_repository(
+    name = "com_github_jarcoal_httpmock",
+    importpath = "github.com/jarcoal/httpmock",
+    sum = "h1:gSvTxxFR/MEMfsGrvRbdfpRUMBStovlSRLw0Ep1bwwc=",
+    version = "v1.2.0",
+)
+
+go_repository(
+    name = "com_github_kelseyhightower_envconfig",
+    importpath = "github.com/kelseyhightower/envconfig",
+    sum = "h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8=",
+    version = "v1.4.0",
+)
+
+go_repository(
+    name = "com_github_okta_okta_sdk_golang_v2",
+    importpath = "github.com/okta/okta-sdk-golang/v2",
+    sum = "h1:wSiDZwZDU9t58I1b0xJcuy36NteU1I3cUis7xbn1FsA=",
+    version = "v2.16.0",
+)
+
+go_repository(
+    name = "com_github_patrickmn_go_cache",
+    importpath = "github.com/patrickmn/go-cache",
+    sum = "h1:pSCLCl6joCFRnjpeojzOpEYs4q7Vditq8fySFG5ap3Y=",
+    version = "v0.0.0-20180815053127-5633e0862627",
+)
+
+go_repository(
+    name = "in_gopkg_square_go_jose_v2",
+    importpath = "gopkg.in/square/go-jose.v2",
+    sum = "h1:NGk74WTnPKBNUhNzQX7PYcTLUjoq7mzKk2OKbvwk2iI=",
+    version = "v2.6.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_apigeeregistry",
+    importpath = "cloud.google.com/go/apigeeregistry",
+    sum = "h1:BwTPDPTBlYIoQGiwtRUsNFRDZ24cT/02Xb3yFH614YQ=",
+    version = "v0.5.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_apikeys",
+    importpath = "cloud.google.com/go/apikeys",
+    sum = "h1:+77+/BhFuU476/s78kYiWHObxaYBHsC6Us+Gd7W9pJ4=",
+    version = "v0.5.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_errorreporting",
+    importpath = "cloud.google.com/go/errorreporting",
+    sum = "h1:kj1XEWMu8P0qlLhm3FwcaFsUvXChV/OraZwA70trRR0=",
+    version = "v0.3.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_logging",
+    importpath = "cloud.google.com/go/logging",
+    sum = "h1:ZBsZK+JG+oCDT+vaxwqF2egKNRjz8soXiS6Xv79benI=",
+    version = "v1.6.1",
+)
+
+go_repository(
+    name = "com_google_cloud_go_maps",
+    importpath = "cloud.google.com/go/maps",
+    sum = "h1:kLReRbclTgJefw2fcCbdLPLhPj0U6UUWN10ldG8sdOU=",
+    version = "v0.1.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_pubsublite",
+    importpath = "cloud.google.com/go/pubsublite",
+    sum = "h1:iqrD8vp3giTb7hI1q4TQQGj77cj8zzgmMPsTZtLnprM=",
+    version = "v1.5.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_spanner",
+    importpath = "cloud.google.com/go/spanner",
+    sum = "h1:NvdTpRwf7DTegbfFdPjAWyD7bOVu0VeMqcvR9aCQCAc=",
+    version = "v1.41.0",
+)
+
+go_repository(
+    name = "com_google_cloud_go_vmwareengine",
+    importpath = "cloud.google.com/go/vmwareengine",
+    sum = "h1:JMPZaOT/gIUxVlTqSl/QQ32Y2k+r0stNeM1NSqhVP9o=",
+    version = "v0.1.0",
 )
 
 # gazelle:repository_macro deps.bzl%go_dependencies

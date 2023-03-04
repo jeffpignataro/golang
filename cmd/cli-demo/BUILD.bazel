@@ -7,11 +7,11 @@ go_library(
         "commands.go",
         "main.go",
     ],
-    importpath = "workspace/cmd/cli-demo",
+    importpath = "golang/cmd/cli-demo",
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/do-a-thing",
-        "@com_github_urfave_cli_v2//:cli",
+        "//vendor/github.com/urfave/cli/v2:cli",
     ],
 )
 

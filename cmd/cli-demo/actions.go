@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	doathing "workspace/pkg/do-a-thing"
+	doathing "golang/pkg/do-a-thing"
 
 	"github.com/urfave/cli/v2"
 )

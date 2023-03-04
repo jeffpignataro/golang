@@ -3,13 +3,13 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "mongo",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/mongo",
+    importpath = "golang/cmd/mongo",
     visibility = ["//visibility:public"],
 )
 
 go_library(
     name = "mongo_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/mongo",
+    importpath = "golang/cmd/mongo",
     visibility = ["//visibility:private"],
 )

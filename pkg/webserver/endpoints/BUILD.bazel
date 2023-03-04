@@ -8,7 +8,7 @@ go_library(
         "healthz.go",
         "quitquitquit.go",
     ],
-    importpath = "workspace/pkg/webserver/endpoints",
+    importpath = "golang/pkg/webserver/endpoints",
     visibility = ["//visibility:public"],
-    deps = ["@org_uber_go_zap//:zap"],
+    deps = ["//vendor/go.uber.org/zap"],
 )

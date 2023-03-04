@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "comp-array_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/codewars/comp-array",
+    importpath = "golang/cmd/codewars/comp-array",
     visibility = ["//visibility:private"],
 )
 

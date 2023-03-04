@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "basic-calculator-ii_lib",
     srcs = ["main.go"],
-    importpath = "workspace/cmd/leetcode/basic-calculator-ii",
+    importpath = "golang/cmd/leetcode/basic-calculator-ii",
     visibility = ["//visibility:private"],
 )
 

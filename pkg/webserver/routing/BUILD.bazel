@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "routing",
     srcs = ["route.go"],
-    importpath = "workspace/pkg/webserver/routing",
+    importpath = "golang/pkg/webserver/routing",
     visibility = ["//visibility:public"],
-    deps = ["@org_uber_go_fx//:fx"],
+    deps = ["//vendor/go.uber.org/fx"],
 )

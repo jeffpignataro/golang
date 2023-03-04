@@ -2,6 +2,8 @@ load("@rules_proto//proto:defs.bzl", "proto_library")
 load("@io_bazel_rules_go//go:def.bzl", "go_library")
 load("@io_bazel_rules_go//proto:def.bzl", "go_proto_library")
 
+# gazelle:resolve go golang/cmd/proto/models/persons/person //cmd/proto/models/persons:person
+
 proto_library(
     name = "addressbook_proto",
     srcs = ["address_book.proto"],
@@ -11,7 +13,7 @@ proto_library(
 
 go_proto_library(
     name = "addressbook_go_proto",
-    importpath = "workspace/cmd/proto/models/addressbooks/addressbook",
+    importpath = "golang/cmd/proto/models/addressbooks/addressbook",
     proto = ":addressbook_proto",
     visibility = ["//visibility:public"],
     deps = ["//cmd/proto/models/persons:person"],
@@ -20,6 +22,6 @@ go_proto_library(
 go_library(
     name = "addressbook",
     embed = [":addressbook_go_proto"],
-    importpath = "workspace/cmd/proto/models/addressbooks/addressbook",
+    importpath = "golang/cmd/proto/models/addressbooks/addressbook",
     visibility = ["//visibility:public"],
 )

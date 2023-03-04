@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"workspace/cmd/proto/models/persons/person"
+	"golang/cmd/proto/models/persons/person"
 )
 
 func main() {

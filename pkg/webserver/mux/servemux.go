@@ -3,7 +3,7 @@ package mux
 import (
 	"net/http"
 
-	"workspace/pkg/webserver/routing"
+	"golang/pkg/webserver/routing"
 )
 
 // NewServeMux builds a ServeMux that will route requests
