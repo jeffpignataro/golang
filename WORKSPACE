@@ -845,6 +845,22 @@ gazelle_dependencies()
 protobuf_deps()
 
 ## Container configuration setup
+# Load the macro that allows you to customize the docker toolchain configuration.
+load(
+    "@io_bazel_rules_docker//toolchains/docker:toolchain.bzl",
+    docker_toolchain_configure = "toolchain_configure",
+)
+
+docker_toolchain_configure(
+    name = "docker_config",
+    # Replace this with a Bazel label to the config.json file. Note absolute or relative
+    # paths are not supported. Docker allows you to specify custom authentication credentials
+    # in the client configuration JSON file.
+    # See https://docs.docker.com/engine/reference/commandline/cli/#configuration-files
+    # for more details.
+    client_config = "@//.docker:config.json",
+)
+
 load("@io_bazel_rules_docker//repositories:repositories.bzl", container_repositories = "repositories")
 
 container_repositories()
@@ -862,9 +878,16 @@ load("@io_bazel_rules_docker//container:container.bzl", "container_pull")
 container_pull(
     name = "static-debian11",
     # 'tag' is also supported, but digest is encouraged for reproducibility.
-    digest = "sha256:ba6c6c75efc77b8d0c1c52904b53958d9d9732148eca4cd44efcc6cd3c750c62",
+    digest = "sha256:58b04fe33b80e96132fe3d28d7f08d5792ebf28a346da13376fcddcab3a9410e",
     registry = "gcr.io",
     repository = "distroless/static-debian11",
+)
+
+container_pull(
+    name = "golang_amd64",
+    digest = "sha256:f2e0acaf7c628cd819b73541d7c1ea8f888d51edb0a58935a3c46a084fa953fa",
+    registry = "index.docker.io",
+    repository = "library/golang",
 )
 ## End of Container configuration section
 
