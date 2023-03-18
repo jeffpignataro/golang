@@ -139,6 +139,10 @@ github.com/inconshreveable/mousetrap v1.0.1 h1:U3uMjPSQEBMNp1lFxmllqCPM6P5u/Xq7P
 github.com/inconshreveable/mousetrap v1.0.1/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230318152044-da392fa989d2 h1:jiYFIH6i7qL+oBZS+9NvgTRYnluDD+fOUVzbwGpVoq0=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230318152044-da392fa989d2/go.mod h1:Y3r+TkCieTyEzL7tIxY+mRI+5QePTECOnrYU8dkf374=
+github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.1 h1:ttvQDgSleGPRFqgtWUBuH9gf1op/TrpJ1r5Fa2macnQ=
+github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.1/go.mod h1:Y3r+TkCieTyEzL7tIxY+mRI+5QePTECOnrYU8dkf374=
+github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.2 h1:PUE4cJ05rmerBRL12cxoe2FpR3ldYuNCIbITP5JUvJk=
+github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.2/go.mod h1:Y3r+TkCieTyEzL7tIxY+mRI+5QePTECOnrYU8dkf374=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/jstemmer/go-junit-report v0.9.1/go.mod h1:Brl9GWCQeLvo8nXZwPNNblvFj/XSXhF0NWZEnDohbsk=
 github.com/kelseyhightower/envconfig v1.4.0 h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8=
