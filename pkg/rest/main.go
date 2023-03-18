@@ -46,9 +46,10 @@ func Call(url string, method string, body *string, auth *Authentication, headers
 		fmt.Print(err.Error())
 		return nil, err
 	}
-
-	for k, v := range *headers {
-		r.Header.Add(k, v)
+	if headers != nil {
+		for k, v := range *headers {
+			r.Header.Add(k, v)
+		}
 	}
 
 	p, err := c.Do(r)

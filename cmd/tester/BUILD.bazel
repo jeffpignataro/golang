@@ -1,15 +1,15 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_library(
-    name = "okta-cli_lib",
+    name = "tester_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/okta-cli",
+    importpath = "golang/cmd/tester",
     visibility = ["//visibility:private"],
     deps = ["//pkg/rest"],
 )
 
 go_binary(
-    name = "okta-cli",
-    embed = [":okta-cli_lib"],
+    name = "tester",
+    embed = [":tester_lib"],
     visibility = ["//visibility:public"],
 )
