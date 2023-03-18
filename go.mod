@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/aws/aws-lambda-go v1.38.0
 	github.com/golang/protobuf v1.5.2
+	github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.0-20230318152044-da392fa989d2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.16.0
 	github.com/spf13/cobra v1.6.1
