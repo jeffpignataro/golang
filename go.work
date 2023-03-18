@@ -4,4 +4,5 @@ use (
 	.
 	./pkg/do-a-thing
 	./pkg/do-a-thing/v2
+	./pkg/do-a-thing/v3
 )
