@@ -12,6 +12,7 @@ go_library(
     deps = [
         "//vendor/github.com/urfave/cli/v2:cli",
         "@com_github_jeffpignataro_golang_pkg_do_a_thing//:go_default_library",
+        "@com_github_jeffpignataro_golang_pkg_do_a_thing_v2//:go_default_library",
     ],
 )
 

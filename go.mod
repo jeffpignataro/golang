@@ -6,6 +6,7 @@ require (
 	github.com/aws/aws-lambda-go v1.38.0
 	github.com/golang/protobuf v1.5.2
 	github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.3
+	github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.0-20230318170428-6f5c8400faa0
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.16.0
 	github.com/spf13/cobra v1.6.1
