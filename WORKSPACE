@@ -945,6 +945,13 @@ go_repository(
     version = "v2.0.0-20230318170428-6f5c8400faa0",
 )
 
+go_repository(
+    name = "com_github_jeffpignataro_golang_pkg_do_a_thing_v3",
+    importpath = "github.com/jeffpignataro/golang/pkg/do-a-thing/v3",
+    sum = "h1:NNo+/YDdsJ+3RCUe8nDPVSgBa9ZW/y8wNmW2VHGnfJY=",
+    version = "v3.0.0",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
