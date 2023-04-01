@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "k8s-controller"
+  namespace: default
+  labels:
+    app: "k8s-controller"
+spec:
+  containers:
+    - name: k8s-controller
+      image: "k8s-controller:latest"
+      imagePullPolicy: Never
+      resources:
+        limits:
+          cpu: 200m
+          memory: 500Mi
+        requests:
+          cpu: 100m
+          memory: 200Mi
+  restartPolicy: Never
