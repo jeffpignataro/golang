@@ -47,3 +47,9 @@ which cli-demo # should return /usr/local/bin/cli-demo
 ```
 
 Then you can easily run `cli-demo` to execute the command after each `bazel build \\...`
+
+## Avoid broke stuff...
+
+```
+bazel build --build_tag_filters=-excluded //...
+```

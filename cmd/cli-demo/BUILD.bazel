@@ -8,6 +8,7 @@ go_library(
         "main.go",
     ],
     importpath = "golang/cmd/cli-demo",
+    tags = ["excluded"],
     visibility = ["//visibility:private"],
     deps = [
         "//vendor/github.com/urfave/cli/v2:cli",
@@ -19,5 +20,6 @@ go_library(
 go_binary(
     name = "cli-demo",
     embed = [":cli-demo_lib"],
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
 )

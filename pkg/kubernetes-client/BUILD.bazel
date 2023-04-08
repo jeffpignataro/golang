@@ -4,6 +4,7 @@ go_library(
     name = "kubernetes-client",
     srcs = ["main.go"],
     importpath = "golang/pkg/kubernetes-client",
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
     deps = [
         "@io_k8s_api//core/v1:core",
