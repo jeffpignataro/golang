@@ -1329,6 +1329,27 @@ go_repository(
     version = "v0.7.0",
 )
 
+go_repository(
+    name = "com_github_go_test_deep",
+    importpath = "github.com/go-test/deep",
+    sum = "h1:u2CU3YKy9I2pmu9pX0eq50wCgjfGIt539SqR7FbHiho=",
+    version = "v1.0.4",
+)
+
+go_repository(
+    name = "com_github_gorilla_websocket",
+    importpath = "github.com/gorilla/websocket",
+    sum = "h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=",
+    version = "v1.5.0",
+)
+
+go_repository(
+    name = "com_github_slack_go_slack",
+    importpath = "github.com/slack-go/slack",
+    sum = "h1:X97b9g2hnITDtNsNe5GkGx6O2/Sz/uC20ejRZN6QxOw=",
+    version = "v0.12.1",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
