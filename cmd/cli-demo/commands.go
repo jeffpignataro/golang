@@ -14,7 +14,7 @@ func firstCommand(c *cli.Context) *cli.Command {
 	return &cli.Command{
 		Name:    "FirstCommand",
 		Aliases: []string{"f", "first"},
-		Usage:   "Run an abstracted command.",
+		Usage:   "Run an abstracted command. Testing a go change.",
 		Action:  firstAction(c),
 		Subcommands: []*cli.Command{
 			subCommand(c),
