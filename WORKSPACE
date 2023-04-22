@@ -1350,6 +1350,13 @@ go_repository(
     version = "v0.12.1",
 )
 
+go_repository(
+    name = "com_github_sirupsen_logrus",
+    importpath = "github.com/sirupsen/logrus",
+    sum = "h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=",
+    version = "v1.9.0",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
