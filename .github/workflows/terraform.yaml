@@ -35,7 +35,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Init
-        run: terraform init --update
+        run: terraform init
 
       - name: Validate
         run: terraform validate
