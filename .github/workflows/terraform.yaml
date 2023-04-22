@@ -22,7 +22,6 @@ defaults:
 
 jobs:
   validate-and-plan:
-    if: github.ref == 'refs/heads/main' && github.event.push
     name: Validate and Speculative Plan
     runs-on: ubuntu-latest
     steps:
@@ -44,6 +43,7 @@ jobs:
       - name: Plan
         run: terraform plan
   apply:
+    if: github.ref == 'refs/heads/main' && github.event.push
     name: Plan and Apply
     runs-on: ubuntu-latest
     steps:
