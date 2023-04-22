@@ -1,0 +1,56 @@
+name: Deploy Infrastructure
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "iac/terraform/*"
+      - .github/workflows/terraform.yaml
+  push:
+    branches:
+      - main
+      - Terraform-Test
+    paths:
+      - "iac/terraform/*"
+      - .github/workflows/terraform.yaml
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: "iac/terraform"
+
+jobs:
+  validate-and-plan:
+    name: Validate and Speculative Plan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2.0.3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Init
+        run: terraform init --update
+
+      - name: Validate
+        run: terraform validate
+
+      - name: Plan
+        run: terraform plan
+  apply:
+    name: Plan and Apply
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2.0.3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Apply
+        run: terraform apply
