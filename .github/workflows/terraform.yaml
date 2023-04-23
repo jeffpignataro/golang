@@ -10,7 +10,6 @@ on:
   push:
     branches:
       - main
-      - Terraform-Test
     paths:
       - "iac/terraform/*"
       - .github/workflows/terraform.yaml
