@@ -43,7 +43,7 @@ jobs:
       - name: Plan
         run: terraform plan
   apply:
-    if: github.ref == 'refs/heads/main' && github.event.push
+    if: github.ref_name == 'main' && github.event_name == 'push'
     name: Plan and Apply
     runs-on: ubuntu-latest
     environment: personal-aws
