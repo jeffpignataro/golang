@@ -14,6 +14,7 @@ go_library(
         "//vendor/github.com/urfave/cli/v2:cli",
         "@com_github_jeffpignataro_golang_pkg_do_a_thing_v2//:do-a-thing",
         "@com_github_jeffpignataro_golang_pkg_do_a_thing_v3//:do-a-thing",
+        "@com_github_sirupsen_logrus//:logrus",
     ],
 )
 
