@@ -141,8 +141,8 @@ def go_dependencies():
     go_repository(
         name = "com_github_go_gl_glfw_v3_3_glfw",
         importpath = "github.com/go-gl/glfw/v3.3/glfw",
-        sum = "h1:WtGNWLvXpe6ZudgnXrq0barxBImvnnJoMEhXAzcbM0I=",
-        version = "v0.0.0-20200222043503-6f7a984d4dc4",
+        sum = "h1:GgabKamyOYguHqHjSkDACcgoPIz3w0Dis/zJ1wyHHHU=",
+        version = "v0.0.0-20221017161538-93cebf72946b",
     )
     go_repository(
         name = "com_github_gogo_protobuf",
@@ -681,8 +681,8 @@ def go_dependencies():
     go_repository(
         name = "org_golang_x_image",
         importpath = "golang.org/x/image",
-        sum = "h1:+qEpEAPhDZ1o0x3tHzZTQDArnOixOzGD9HUJfcg0mb4=",
-        version = "v0.0.0-20190802002840-cff245a6509b",
+        sum = "h1:D0iM1dTCbD5Dg1CbuvLC/v/agLc79efSj/L35Q3Vqhs=",
+        version = "v0.0.0-20210607152325-775e3b0c77b9",
     )
 
     go_repository(

@@ -1357,6 +1357,20 @@ go_repository(
     version = "v1.9.0",
 )
 
+go_repository(
+    name = "com_github_g3n_engine",
+    importpath = "github.com/g3n/engine",
+    sum = "h1:7dmj4c+3xHcBnYrVmRuVf/oZ2JycxJU9Y+2FQj1Af2Y=",
+    version = "v0.2.0",
+)
+
+go_repository(
+    name = "com_github_golang_freetype",
+    importpath = "github.com/golang/freetype",
+    sum = "h1:DACJavvAHhabrF08vX0COfcOBJRhZ8lUbR+ZWIs0Y5g=",
+    version = "v0.0.0-20170609003504-e2365dfdc4a0",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
