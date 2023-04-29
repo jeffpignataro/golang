@@ -25,6 +25,14 @@ require (
 )
 
 require (
+	github.com/aws/aws-sdk-go-v2 v1.18.0 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.33 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.27 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sfn v1.17.10 // indirect
+	github.com/aws/smithy-go v1.13.5 // indirect
+)
+
+require (
 	github.com/g3n/engine v0.2.0
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
