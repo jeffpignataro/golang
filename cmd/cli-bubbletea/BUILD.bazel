@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cli-bubbletea_lib",
+    srcs = ["cli.go"],
+    importpath = "golang/cmd/cli-bubbletea",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_charmbracelet_bubbletea//:bubbletea"],
+)
+
+go_binary(
+    name = "cli-bubbletea",
+    embed = [":cli-bubbletea_lib"],
+    visibility = ["//visibility:public"],
+)

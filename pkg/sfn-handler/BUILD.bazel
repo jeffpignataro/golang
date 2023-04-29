@@ -1,0 +1,13 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "sfn-handler",
+    srcs = ["main.go"],
+    importpath = "golang/pkg/sfn-handler",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@com_github_aws_aws_sdk_go_v2_config//:config",
+        "@com_github_aws_aws_sdk_go_v2_service_sfn//:sfn",
+        "@com_github_billheroinc_logrus//:logrus",
+    ],
+)
