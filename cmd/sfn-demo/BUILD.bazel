@@ -1,0 +1,18 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "sfn-demo_lib",
+    srcs = ["main.go"],
+    importpath = "golang/cmd/sfn-demo",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/sfn-handler",
+        "@com_github_billheroinc_logrus//:logrus",
+    ],
+)
+
+go_binary(
+    name = "sfn-demo",
+    embed = [":sfn-demo_lib"],
+    visibility = ["//visibility:public"],
+)

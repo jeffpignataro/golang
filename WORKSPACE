@@ -1371,6 +1371,195 @@ go_repository(
     version = "v0.0.0-20170609003504-e2365dfdc4a0",
 )
 
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2",
+    importpath = "github.com/aws/aws-sdk-go-v2",
+    sum = "h1:882kkTpSFhdgYRKVZ/VCgf7sd0ru57p2JCxz4/oN5RY=",
+    version = "v1.18.0",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_config",
+    importpath = "github.com/aws/aws-sdk-go-v2/config",
+    sum = "h1:7vkUEmjjv+giht4wIROqLs+49VWmiQMMHSduxmoNKLU=",
+    version = "v1.18.22",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_credentials",
+    importpath = "github.com/aws/aws-sdk-go-v2/credentials",
+    sum = "h1:VRiXnPEaaPeGeoFcXvMZOB5K/yfIXOYE3q97Kgb0zbU=",
+    version = "v1.13.21",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_feature_ec2_imds",
+    importpath = "github.com/aws/aws-sdk-go-v2/feature/ec2/imds",
+    sum = "h1:jJPgroehGvjrde3XufFIJUZVK5A2L9a3KwSFgKy9n8w=",
+    version = "v1.13.3",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_internal_configsources",
+    importpath = "github.com/aws/aws-sdk-go-v2/internal/configsources",
+    sum = "h1:kG5eQilShqmJbv11XL1VpyDbaEJzWxd4zRiCG30GSn4=",
+    version = "v1.1.33",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_internal_endpoints_v2",
+    importpath = "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2",
+    sum = "h1:vFQlirhuM8lLlpI7imKOMsjdQLuN9CPi+k44F/OFVsk=",
+    version = "v2.4.27",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_internal_ini",
+    importpath = "github.com/aws/aws-sdk-go-v2/internal/ini",
+    sum = "h1:gGLG7yKaXG02/jBlg210R7VgQIotiQntNhsCFejawx8=",
+    version = "v1.3.34",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_service_internal_presigned_url",
+    importpath = "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url",
+    sum = "h1:0iKliEXAcCa2qVtRs7Ot5hItA2MsufrphbRFlz1Owxo=",
+    version = "v1.9.27",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_service_sfn",
+    importpath = "github.com/aws/aws-sdk-go-v2/service/sfn",
+    sum = "h1:s4YS1sYb3f14qnsJcSBUUyxO9/WkCKWdMpP5L25gsp4=",
+    version = "v1.17.10",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_service_sso",
+    importpath = "github.com/aws/aws-sdk-go-v2/service/sso",
+    sum = "h1:GAiaQWuQhQQui76KjuXeShmyXqECwQ0mGRMc/rwsL+c=",
+    version = "v1.12.9",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_service_ssooidc",
+    importpath = "github.com/aws/aws-sdk-go-v2/service/ssooidc",
+    sum = "h1:TraLwncRJkWqtIBVKI/UqBymq4+hL+3MzUOtUATuzkA=",
+    version = "v1.14.9",
+)
+
+go_repository(
+    name = "com_github_aws_aws_sdk_go_v2_service_sts",
+    importpath = "github.com/aws/aws-sdk-go-v2/service/sts",
+    sum = "h1:6UbNM/KJhMBfOI5+lpVcJ/8OA7cBSz0O6OX37SRKlSw=",
+    version = "v1.18.10",
+)
+
+go_repository(
+    name = "com_github_aws_smithy_go",
+    importpath = "github.com/aws/smithy-go",
+    sum = "h1:hgz0X/DX0dGqTYpGALqXJoRKRj5oQ7150i5FdTePzO8=",
+    version = "v1.13.5",
+)
+
+go_repository(
+    name = "com_github_billheroinc_logrus",
+    importpath = "github.com/BillHeroInc/logrus",
+    sum = "h1:NELeUSqRVUBgqkZJS9oEnfMmtFo0a6imfjRhEP0ELK4=",
+    version = "v1.0.0",
+)
+
+go_repository(
+    name = "com_github_jmespath_go_jmespath",
+    importpath = "github.com/jmespath/go-jmespath",
+    sum = "h1:BEgLn5cpjn8UN1mAw4NjwDrS35OdebyEtFe+9YPoQUg=",
+    version = "v0.4.0",
+)
+
+go_repository(
+    name = "com_github_jmespath_go_jmespath_internal_testify",
+    importpath = "github.com/jmespath/go-jmespath/internal/testify",
+    sum = "h1:shLQSRRSCCPj3f2gpwzGwWFoC7ycTf1rcQZHOlsJ6N8=",
+    version = "v1.5.1",
+)
+
+go_repository(
+    name = "com_github_aymanbagabas_go_osc52",
+    importpath = "github.com/aymanbagabas/go-osc52",
+    sum = "h1:q2sWUyDcozPLcLabEMd+a+7Ea2DitxZVN9hTxab9L4E=",
+    version = "v1.2.1",
+)
+
+go_repository(
+    name = "com_github_charmbracelet_bubbletea",
+    importpath = "github.com/charmbracelet/bubbletea",
+    sum = "h1:vuUJ9HJ7b/COy4I30e8xDVQ+VRDUEFykIjryPfgsdps=",
+    version = "v0.23.2",
+)
+
+go_repository(
+    name = "com_github_containerd_console",
+    importpath = "github.com/containerd/console",
+    sum = "h1:lIr7SlA5PxZyMV30bDW0MGbiOPXwc63yRuCP0ARubLw=",
+    version = "v1.0.3",
+)
+
+go_repository(
+    name = "com_github_lucasb_eyer_go_colorful",
+    importpath = "github.com/lucasb-eyer/go-colorful",
+    sum = "h1:1nnpGOrhyZZuNyfu1QjKiUICQ74+3FNCN69Aj6K7nkY=",
+    version = "v1.2.0",
+)
+
+go_repository(
+    name = "com_github_mattn_go_localereader",
+    importpath = "github.com/mattn/go-localereader",
+    sum = "h1:ygSAOl7ZXTx4RdPYinUpg6W99U8jWvWi9Ye2JC/oIi4=",
+    version = "v0.0.1",
+)
+
+go_repository(
+    name = "com_github_mattn_go_runewidth",
+    importpath = "github.com/mattn/go-runewidth",
+    sum = "h1:+xnbZSEeDbOIg5/mE6JF0w6n9duR1l3/WmbinWVwUuU=",
+    version = "v0.0.14",
+)
+
+go_repository(
+    name = "com_github_muesli_ansi",
+    importpath = "github.com/muesli/ansi",
+    sum = "h1:1XF24mVaiu7u+CFywTdcDo2ie1pzzhwjt6RHqzpMU34=",
+    version = "v0.0.0-20211018074035-2e021307bc4b",
+)
+
+go_repository(
+    name = "com_github_muesli_cancelreader",
+    importpath = "github.com/muesli/cancelreader",
+    sum = "h1:3I4Kt4BQjOR54NavqnDogx/MIoWBFa0StPA8ELUXHmA=",
+    version = "v0.2.2",
+)
+
+go_repository(
+    name = "com_github_muesli_reflow",
+    importpath = "github.com/muesli/reflow",
+    sum = "h1:IFsN6K9NfGtjeggFP+68I4chLZV2yIKsXJFNZ+eWh6s=",
+    version = "v0.3.0",
+)
+
+go_repository(
+    name = "com_github_muesli_termenv",
+    importpath = "github.com/muesli/termenv",
+    sum = "h1:8x9NFfOe8lmIWK4pgy3IfVEy47f+ppe3tUqdPZG2Uy0=",
+    version = "v0.14.0",
+)
+
+go_repository(
+    name = "com_github_rivo_uniseg",
+    importpath = "github.com/rivo/uniseg",
+    sum = "h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=",
+    version = "v0.2.0",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
