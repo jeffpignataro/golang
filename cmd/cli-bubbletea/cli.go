@@ -7,12 +7,6 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 )
 
-type model struct {
-	choices  []string         // items on the to-do list
-	cursor   int              // which to-do list item our cursor is pointing at
-	selected map[int]struct{} // which to-do items are selected
-}
-
 func main() {
 	p := tea.NewProgram(initialModel())
 	if _, err := p.Run(); err != nil {
@@ -21,8 +15,8 @@ func main() {
 	}
 }
 
-func initialModel() model {
-	return model{
+func initialModel() demo {
+	return demo{
 		// Our to-do list is a grocery list
 		choices: []string{"Buy carrots", "Buy celery", "Buy kohlrabi"},
 
@@ -33,12 +27,12 @@ func initialModel() model {
 	}
 }
 
-func (m model) Init() tea.Cmd {
+func (m demo) Init() tea.Cmd {
 	// Just return `nil`, which means "no I/O right now, please."
 	return nil
 }
 
-func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+func (m demo) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	// Is it a key press?
@@ -80,7 +74,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, nil
 }
 
-func (m model) View() string {
+func (m demo) View() string {
 	// The header
 	s := "What should we buy at the market?\n\n"
 
