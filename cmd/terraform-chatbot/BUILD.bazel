@@ -1,0 +1,27 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "terraform-chatbot_lib",
+    srcs = [
+        "main.go",
+        "terraform.go",
+        "terraform-declarative.go",
+    ],
+    importpath = "golang/cmd/terraform-chatbot",
+    tags = ["excluded"],
+    visibility = ["//visibility:private"],
+    deps = [
+        "@com_github_hashicorp_terraform//configs",
+        "@com_github_hashicorp_terraform//terraform",
+        "@com_github_zclconf_go_cty//cty",
+        "@com_google_cloud_go_dialogflow//apiv2",
+        "@go_googleapis//google/cloud/dialogflow/v2:dialogflow_go_proto",
+    ],
+)
+
+go_binary(
+    name = "terraform-chatbot",
+    embed = [":terraform-chatbot_lib"],
+    tags = ["excluded"],
+    visibility = ["//visibility:public"],
+)

@@ -1,0 +1,12 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "helloworld",
+    srcs = ["helloworld.pb.go"],
+    importpath = "golang/cmd/proto/sample/google.golang.org/grpc/examples/helloworld/helloworld",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//vendor/google.golang.org/protobuf/reflect/protoreflect",
+        "//vendor/google.golang.org/protobuf/runtime/protoimpl",
+    ],
+)

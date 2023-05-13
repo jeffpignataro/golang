@@ -8,7 +8,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 )
 
-func main() {
+func main_terraform() {
 	// Define the Terraform configuration
 	configStr := `
 		provider "aws" {
