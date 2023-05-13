@@ -1,8 +1,10 @@
+package main
+
 import (
-	"github.com/jonstacks/terraform-builder/builder"
+	builder "github.com/hashicorp/terraform/configs"
 )
 
-func main() {
+func main_declarative() {
 	config := builder.NewConfig(
 		builder.Provider("aws", map[string]string{
 			"region": "us-west-2",
