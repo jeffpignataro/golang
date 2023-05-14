@@ -4,6 +4,7 @@ go_library(
     name = "hello-world-3d-game_lib",
     srcs = ["main.go"],
     importpath = "golang/cmd/hello-world-3d-game",
+    tags = ["excluded"],
     visibility = ["//visibility:private"],
     deps = [
         "@com_github_g3n_engine//app",
@@ -25,5 +26,6 @@ go_library(
 go_binary(
     name = "hello-world-3d-game",
     embed = [":hello-world-3d-game_lib"],
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
 )
