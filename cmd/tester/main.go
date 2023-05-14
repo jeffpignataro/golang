@@ -4,16 +4,19 @@ import (
 	"golang/pkg/rest"
 	"net/http"
 
-	log "github.com/sirupsen/logrus"
-
 	"github.com/gin-gonic/gin"
 )
 
+var proxies = []string{"127.0.0.1"}
+
 func main() {
 	ws := gin.Default()
+	ws.SetTrustedProxies(proxies)
+
 	ws.GET("/alive", alive)
 	ws.GET("/ping", ping)
-	ws.Run()
+
+	ws.Run(":8888")
 }
 
 func alive(c *gin.Context) {
@@ -22,5 +25,5 @@ func alive(c *gin.Context) {
 
 func ping(c *gin.Context) {
 	r, _ := rest.Call("https://www.google.com", http.MethodGet, nil, nil, nil)
-	log.Info(r)
+	c.JSON(200, string(r))
 }
