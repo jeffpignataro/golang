@@ -5,7 +5,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "golang/cmd/tester",
     visibility = ["//visibility:private"],
-    deps = ["//pkg/rest"],
+    deps = [
+        "//pkg/rest",
+        "@com_github_gin_gonic_gin//:gin",
+    ],
 )
 
 go_binary(
