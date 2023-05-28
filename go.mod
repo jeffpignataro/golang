@@ -12,6 +12,7 @@ require (
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.17.0
+	github.com/sashabaranov/go-openai v1.9.5
 	github.com/slack-go/slack v0.12.1
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.15.0
