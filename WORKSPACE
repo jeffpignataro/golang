@@ -2708,6 +2708,13 @@ go_repository(
     version = "v1.1.0",
 )
 
+go_repository(
+    name = "com_github_sashabaranov_go_openai",
+    importpath = "github.com/sashabaranov/go-openai",
+    sum = "h1:z1VCMXsfnug+U0ceTTIXr/L26AYl9jafqA9lptlSX0c=",
+    version = "v1.9.5",
+)
+
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
 
