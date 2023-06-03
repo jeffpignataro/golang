@@ -1493,15 +1493,15 @@ go_repository(
 go_repository(
     name = "com_github_charmbracelet_bubbletea",
     importpath = "github.com/charmbracelet/bubbletea",
-    sum = "h1:vuUJ9HJ7b/COy4I30e8xDVQ+VRDUEFykIjryPfgsdps=",
-    version = "v0.23.2",
+    sum = "h1:LpdYfnu+Qc6XtvMz6d/6rRY71yttHTP5HtrjMgWvixc=",
+    version = "v0.24.1",
 )
 
 go_repository(
     name = "com_github_containerd_console",
     importpath = "github.com/containerd/console",
-    sum = "h1:lIr7SlA5PxZyMV30bDW0MGbiOPXwc63yRuCP0ARubLw=",
-    version = "v1.0.3",
+    sum = "h1:q2hJAaP1k2wIvVRd/hEHD7lacgqrCPS+k8g1MndzfWY=",
+    version = "v1.0.4-0.20230313162750-1ae8d489ac81",
 )
 
 go_repository(
@@ -1549,8 +1549,8 @@ go_repository(
 go_repository(
     name = "com_github_muesli_termenv",
     importpath = "github.com/muesli/termenv",
-    sum = "h1:8x9NFfOe8lmIWK4pgy3IfVEy47f+ppe3tUqdPZG2Uy0=",
-    version = "v0.14.0",
+    sum = "h1:UzuTb/+hhlBugQz28rpzey4ZuKcZ03MeKsoG7IJZIxs=",
+    version = "v0.15.1",
 )
 
 go_repository(
@@ -2713,6 +2713,55 @@ go_repository(
     importpath = "github.com/sashabaranov/go-openai",
     sum = "h1:z1VCMXsfnug+U0ceTTIXr/L26AYl9jafqA9lptlSX0c=",
     version = "v1.9.5",
+)
+
+go_repository(
+    name = "com_github_atotto_clipboard",
+    importpath = "github.com/atotto/clipboard",
+    sum = "h1:EH0zSVneZPSuFR11BlR9YppQTVDbh5+16AmcJi4g1z4=",
+    version = "v0.1.4",
+)
+
+go_repository(
+    name = "com_github_aymanbagabas_go_osc52_v2",
+    importpath = "github.com/aymanbagabas/go-osc52/v2",
+    sum = "h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=",
+    version = "v2.0.1",
+)
+
+go_repository(
+    name = "com_github_charmbracelet_bubbles",
+    importpath = "github.com/charmbracelet/bubbles",
+    sum = "h1:6uzpAAaT9ZqKssntbvZMlksWHruQLNxg49H5WdeuYSY=",
+    version = "v0.16.1",
+)
+
+go_repository(
+    name = "com_github_charmbracelet_harmonica",
+    importpath = "github.com/charmbracelet/harmonica",
+    sum = "h1:8NxJWRWg/bzKqqEaaeFNipOu77YR5t8aSwG4pgaUBiQ=",
+    version = "v0.2.0",
+)
+
+go_repository(
+    name = "com_github_charmbracelet_lipgloss",
+    importpath = "github.com/charmbracelet/lipgloss",
+    sum = "h1:17WMwi7N1b1rVWOjMT+rCh7sQkvDU75B2hbZpc5Kc1E=",
+    version = "v0.7.1",
+)
+
+go_repository(
+    name = "com_github_dustin_go_humanize",
+    importpath = "github.com/dustin/go-humanize",
+    sum = "h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=",
+    version = "v1.0.1",
+)
+
+go_repository(
+    name = "com_github_sahilm_fuzzy",
+    importpath = "github.com/sahilm/fuzzy",
+    sum = "h1:FzWGaw2Opqyu+794ZQ9SYifWv2EIXpwP4q8dY1kDAwI=",
+    version = "v0.1.0",
 )
 
 # gazelle:repository_macro deps.bzl%go_dependencies
