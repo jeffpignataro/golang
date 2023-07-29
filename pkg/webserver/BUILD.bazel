@@ -4,14 +4,15 @@ go_library(
     name = "webserver",
     srcs = ["main.go"],
     importpath = "golang/pkg/webserver",
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/helpers",
         "//pkg/webserver/endpoints",
         "//pkg/webserver/mux",
         "//pkg/webserver/routing",
-        "//vendor/go.uber.org/fx",
-        "//vendor/go.uber.org/fx/fxevent",
-        "//vendor/go.uber.org/zap",
+        "@org_uber_go_fx//:fx",
+        "@org_uber_go_fx//fxevent",
+        "@org_uber_go_zap//:zap",
     ],
 )

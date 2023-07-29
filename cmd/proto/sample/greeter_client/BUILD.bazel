@@ -6,9 +6,9 @@ go_library(
     importpath = "golang/cmd/proto/sample/greeter_client",
     visibility = ["//visibility:private"],
     deps = [
-        "//vendor/google.golang.org/grpc",
-        "//vendor/google.golang.org/grpc/credentials/insecure",
-        "//vendor/google.golang.org/grpc/examples/helloworld/helloworld",
+        "//cmd/proto/sample/helloworld",
+        "@org_golang_google_grpc//:go_default_library",
+        "@org_golang_google_grpc//credentials/insecure",
     ],
 )
 

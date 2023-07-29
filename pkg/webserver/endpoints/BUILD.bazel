@@ -10,5 +10,5 @@ go_library(
     ],
     importpath = "golang/pkg/webserver/endpoints",
     visibility = ["//visibility:public"],
-    deps = ["//vendor/go.uber.org/zap"],
+    deps = ["@org_uber_go_zap//:zap"],
 )

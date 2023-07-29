@@ -3,6 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "cmd",
     srcs = [
+        "config.go",
         "init.go",
         "root.go",
         "version.go",
@@ -10,8 +11,8 @@ go_library(
     importpath = "golang/cmd/cobra/cmd",
     visibility = ["//visibility:public"],
     deps = [
-        "//vendor/github.com/mitchellh/go-homedir",
-        "//vendor/github.com/spf13/cobra",
-        "//vendor/github.com/spf13/viper",
+        "@com_github_mitchellh_go_homedir//:go-homedir",
+        "@com_github_spf13_cobra//:cobra",
+        "@com_github_spf13_viper//:viper",
     ],
 )

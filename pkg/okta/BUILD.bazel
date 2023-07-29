@@ -5,5 +5,5 @@ go_library(
     srcs = ["main.go"],
     importpath = "golang/pkg/okta",
     visibility = ["//visibility:public"],
-    deps = ["//vendor/github.com/okta/okta-sdk-golang/v2/okta"],
+    deps = ["@com_github_okta_okta_sdk_golang_v2//okta"],
 )

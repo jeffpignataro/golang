@@ -6,7 +6,7 @@ go_library(
     importpath = "golang/cmd/proto/sample/google.golang.org/grpc/examples/helloworld/helloworld",
     visibility = ["//visibility:public"],
     deps = [
-        "//vendor/google.golang.org/protobuf/reflect/protoreflect",
-        "//vendor/google.golang.org/protobuf/runtime/protoimpl",
+        "@org_golang_google_protobuf//reflect/protoreflect",
+        "@org_golang_google_protobuf//runtime/protoimpl",
     ],
 )

@@ -5,5 +5,5 @@ go_library(
     srcs = ["route.go"],
     importpath = "golang/pkg/webserver/routing",
     visibility = ["//visibility:public"],
-    deps = ["//vendor/go.uber.org/fx"],
+    deps = ["@org_uber_go_fx//:fx"],
 )

@@ -7,7 +7,7 @@ go_library(
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/euler/13",
-        "//vendor/github.com/aws/aws-lambda-go/lambda",
+        "@com_github_aws_aws_lambda_go//lambda",
     ],
 )
 
