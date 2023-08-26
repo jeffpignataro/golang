@@ -1,6 +1,6 @@
 module golang
 
-go 1.20
+go 1.21
 
 require (
 	cloud.google.com/go/dialogflow v1.40.0
