@@ -4,6 +4,7 @@ go_library(
     name = "cli-bubbletea_lib",
     srcs = ["main.go"],
     importpath = "golang/cmd/cli-bubbletea",
+    tags = ["excluded"],
     visibility = ["//visibility:private"],
     deps = [
         "@com_github_charmbracelet_bubbles//textinput",
@@ -15,5 +16,6 @@ go_library(
 go_binary(
     name = "cli-bubbletea",
     embed = [":cli-bubbletea_lib"],
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
 )

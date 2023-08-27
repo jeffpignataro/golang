@@ -6,7 +6,7 @@ import (
 	"log"
 
 	dialogflow "cloud.google.com/go/dialogflow/apiv2"
-	dialogflowpb "google.golang.org/genproto/googleapis/cloud/dialogflow/v2"
+	dialogflowpb "cloud.google.com/go/dialogflow/apiv2/dialogflowpb"
 )
 
 func main() {
@@ -50,8 +50,8 @@ func main() {
 
 	// Deploy infrastructure using Terraform based on the user's input
 	if intentDisplayName == "deploy-infra" {
-		serverType := parameters["server_type"].GetStringValue()
-		cloudProvider := parameters["cloud_provider"].GetStringValue()
+		_ = parameters["server_type"].GetStringValue()
+		_ = parameters["cloud_provider"].GetStringValue()
 
 		// Use Terraform to deploy infrastructure based on the user's input
 		// ...
