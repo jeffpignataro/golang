@@ -1,4 +1,4 @@
-module github.com/jeffpignataro/golang/pkg/helloworld
+module github.com/jeffpignataro/golang/pkg/hello-world
 
 go 1.21.0
 
