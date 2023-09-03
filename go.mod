@@ -11,7 +11,7 @@ require (
 	github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0
-	github.com/jeffpignataro/golang/pkg/hello-world v0.0.1
+	github.com/jeffpignataro/golang/pkg/hello-world v0.0.2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.20.0
 	github.com/sashabaranov/go-openai v1.14.2
@@ -126,7 +126,7 @@ require (
 	golang.org/x/crypto v0.12.0 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/oauth2 v0.11.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/term v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
