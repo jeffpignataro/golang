@@ -1,8 +1,9 @@
-go 1.21
+go 1.21.0
 
 use (
 	.
 	./pkg/do-a-thing
 	./pkg/do-a-thing/v2
 	./pkg/do-a-thing/v3
+	./pkg/hello-world
 )
