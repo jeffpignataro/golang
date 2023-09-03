@@ -5,6 +5,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "golang/cmd/hello-world",
     visibility = ["//visibility:private"],
+    deps = ["@com_github_jeffpignataro_golang_pkg_hello_world//:go_default_library"],
 )
 
 go_binary(

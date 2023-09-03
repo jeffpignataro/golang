@@ -254,6 +254,8 @@ github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3 h1:RoLkzzZhshIZLcNnOhS0
 github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3/go.mod h1:MbriCj6D32rxMG7V1fiyn1xs8aSqY0oMGhFE8dUTDqY=
 github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0 h1:NNo+/YDdsJ+3RCUe8nDPVSgBa9ZW/y8wNmW2VHGnfJY=
 github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0/go.mod h1:5J9TP8pxa8XY9hurqdttGopi2g7d/hSiQAVYwAZLKVo=
+github.com/jeffpignataro/golang/pkg/hello-world v0.0.1 h1:KNV7qAnulkcHWKcH8V8lR2JvCoAfAX/inN2KddJggX0=
+github.com/jeffpignataro/golang/pkg/hello-world v0.0.1/go.mod h1:MgVYZCZDj4MLEWHxfJ+/2Czte5CAk2ju0/kKt0hDUkA=
 github.com/jmespath/go-jmespath v0.4.0/go.mod h1:T8mJZnbsbmF+m6zOOFylbeCJqk5+pHWvzYPziyZiYoo=
 github.com/jmespath/go-jmespath/internal/testify v1.5.1/go.mod h1:L3OGu8Wl2/fWfCI6z80xFu9LTZmf1ZRjMHUOPmWr69U=
 github.com/josharian/intern v1.0.0 h1:vlS4z54oSdjm0bgjRigI+G1HpF+tI+9rE5LLzOg8HmY=

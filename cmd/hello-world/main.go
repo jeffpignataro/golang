@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	helloworld "github.com/jeffpignataro/golang/pkg/hello-world"
 )
 
 func main() {
-	fmt.Println("Hello World")
+	fmt.Print(helloworld.Hello())
 }

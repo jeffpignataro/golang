@@ -1,6 +1,6 @@
 module github.com/jeffpignataro/golang/pkg/hello-world
 
-go 1.21.0
+go 1.20
 
 require github.com/sirupsen/logrus v1.9.3
 
