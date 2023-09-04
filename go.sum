@@ -269,6 +269,8 @@ github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:
 github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
+github.com/jeffpignataro/golang/cmd/proto/models/persons/person v0.0.0-20230904161327-a7535431536f h1:JzN2GYqNjc8Tx1iYZC8/x9olnNeZUnrIEoAd8JlEu/I=
+github.com/jeffpignataro/golang/cmd/proto/models/persons/person v0.0.0-20230904161327-a7535431536f/go.mod h1:Woh0kTf7LveSuwPB75T/h3Yk9DJcvigG40IlfA2CrZs=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.3 h1:oKBMGwVfaNTWaQZeOlnXcjRTCA/cv3ZzWDCajl92dog=
 github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.3/go.mod h1:Y3r+TkCieTyEzL7tIxY+mRI+5QePTECOnrYU8dkf374=
 github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3 h1:RoLkzzZhshIZLcNnOhS0oaEvSfGeAMuOiUxglAuT168=

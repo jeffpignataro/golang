@@ -8,6 +8,7 @@ require (
 	github.com/charmbracelet/bubbles v0.16.1
 	github.com/charmbracelet/bubbletea v0.24.2
 	github.com/charmbracelet/lipgloss v0.8.0
+	github.com/jeffpignataro/golang/cmd/proto/models/persons/person v0.0.0-20230904161327-a7535431536f
 	github.com/jeffpignataro/golang/pkg/do-a-thing v0.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0
