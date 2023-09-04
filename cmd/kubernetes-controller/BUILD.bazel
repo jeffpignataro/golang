@@ -6,6 +6,7 @@ go_library(
     importpath = "github.com/jeffpignataro/golang/cmd/kubernetes-controller",
     tags = ["excluded"],
     visibility = ["//visibility:private"],
+    deps = ["//pkg/kubernetes-client"],
 )
 
 go_binary(

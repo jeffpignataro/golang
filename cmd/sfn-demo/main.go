@@ -1,7 +1,7 @@
 package main
 
 import (
-	sfnhandler "golang/pkg/sfn-handler"
+	sfnhandler "github.com/jeffpignataro/golang/pkg/sfn-handler"
 
 	log "github.com/BillHeroInc/logrus"
 )

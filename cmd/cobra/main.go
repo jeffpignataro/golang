@@ -1,6 +1,6 @@
 package main
 
-import "golang/cmd/cobra/cmd"
+import "github.com/jeffpignataro/golang/cmd/cobra/cmd"
 
 func main() {
 	cmd.Execute()

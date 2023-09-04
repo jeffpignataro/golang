@@ -7,7 +7,7 @@
 package addressbook
 
 import (
-	person "golang/cmd/proto/models/persons/person"
+	person "github.com/jeffpignataro/golang/cmd/proto/models/persons/person"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

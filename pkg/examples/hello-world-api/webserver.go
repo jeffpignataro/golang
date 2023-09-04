@@ -3,7 +3,7 @@ package helloworldapi
 import (
 	"net/http"
 
-	helloworldapi_endpoints "golang/pkg/examples/hello-world-api/endpoints"
+	helloworldapi_endpoints "github.com/jeffpignataro/golang/pkg/examples/hello-world-api/endpoints"
 )
 
 // Handler for http requests

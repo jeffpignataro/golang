@@ -1,8 +1,9 @@
 package main
 
 import (
-	"golang/pkg/kubernetes-client"
 	"log"
+
+	"github.com/jeffpignataro/golang/pkg/kubernetes-client"
 )
 
 func main() {

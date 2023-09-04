@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"golang/cmd/proto/models/persons/person"
+
+	"github.com/jeffpignataro/golang/cmd/proto/models/persons/person"
 )
 
 func main() {

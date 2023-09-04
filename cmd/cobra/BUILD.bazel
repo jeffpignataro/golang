@@ -5,6 +5,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/cobra",
     visibility = ["//visibility:private"],
+    deps = ["//cmd/cobra/cmd"],
 )
 
 go_binary(

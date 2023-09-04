@@ -5,7 +5,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/lambda/13",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_aws_aws_lambda_go//lambda"],
+    deps = [
+        "//pkg/euler/13",
+        "@com_github_aws_aws_lambda_go//lambda",
+    ],
 )
 
 go_binary(

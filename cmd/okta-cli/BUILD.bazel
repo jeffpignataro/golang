@@ -5,6 +5,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/okta-cli",
     visibility = ["//visibility:private"],
+    deps = ["//pkg/rest"],
 )
 
 go_binary(

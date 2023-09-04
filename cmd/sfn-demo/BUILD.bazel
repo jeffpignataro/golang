@@ -6,7 +6,10 @@ go_library(
     importpath = "github.com/jeffpignataro/golang/cmd/sfn-demo",
     tags = ["excluded"],
     visibility = ["//visibility:private"],
-    deps = ["@com_github_billheroinc_logrus//:logrus"],
+    deps = [
+        "//pkg/sfn-handler",
+        "@com_github_billheroinc_logrus//:logrus",
+    ],
 )
 
 go_binary(

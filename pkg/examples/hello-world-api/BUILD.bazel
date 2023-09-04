@@ -5,4 +5,5 @@ go_library(
     srcs = ["webserver.go"],
     importpath = "github.com/jeffpignataro/golang/pkg/examples/hello-world-api",
     visibility = ["//visibility:public"],
+    deps = ["//pkg/examples/hello-world-api/endpoints"],
 )

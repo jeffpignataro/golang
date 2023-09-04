@@ -5,6 +5,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/api/weather",
     visibility = ["//visibility:private"],
+    deps = ["//pkg/webserver"],
 )
 
 go_binary(

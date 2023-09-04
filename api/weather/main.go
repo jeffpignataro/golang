@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang/pkg/webserver"
+	"github.com/jeffpignataro/golang/pkg/webserver"
 )
 
 func main() {

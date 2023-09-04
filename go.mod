@@ -12,6 +12,7 @@ require (
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0
 	github.com/jeffpignataro/golang/pkg/hello-world v0.0.3
+	github.com/jeffpignataro/golang/pkg/webserver v0.0.0-20230904160806-584a5c6795cd
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.20.0
 	github.com/sashabaranov/go-openai v1.14.2
@@ -66,6 +67,10 @@ require (
 	github.com/google/s2a-go v0.1.5 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.2.5 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
+	github.com/jeffpignataro/golang/pkg/helpers v0.0.0-20230904160806-584a5c6795cd // indirect
+	github.com/jeffpignataro/golang/pkg/webserver/endpoints v0.0.0-20230904160806-584a5c6795cd // indirect
+	github.com/jeffpignataro/golang/pkg/webserver/mux v0.0.0-20230904160806-584a5c6795cd // indirect
+	github.com/jeffpignataro/golang/pkg/webserver/routing v0.0.0-20230904160806-584a5c6795cd // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect

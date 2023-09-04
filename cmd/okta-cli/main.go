@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"golang/pkg/rest"
 	"os"
 	"time"
+
+	"github.com/jeffpignataro/golang/pkg/rest"
 )
 
 type OktaResponse struct {

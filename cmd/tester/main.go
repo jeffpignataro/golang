@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"golang/pkg/rest"
 	"net/http"
+
+	"github.com/jeffpignataro/golang/pkg/rest"
 )
 
 func main() {

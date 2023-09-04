@@ -6,7 +6,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/src/cmd/examples/hello-world-api",
     visibility = ["//visibility:private"],
-    deps = ["@org_uber_go_fx//:fx"],
+    deps = [
+        "//pkg/examples/hello-world-api",
+        "@org_uber_go_fx//:fx",
+    ],
 )
 
 go_binary(

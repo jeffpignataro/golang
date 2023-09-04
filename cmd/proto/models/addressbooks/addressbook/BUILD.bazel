@@ -6,7 +6,6 @@ go_library(
     importpath = "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbook",
     visibility = ["//visibility:public"],
     deps = [
-        "//cmd/proto/models/persons:person",
         "@org_golang_google_protobuf//reflect/protoreflect",
         "@org_golang_google_protobuf//runtime/protoimpl",
     ],

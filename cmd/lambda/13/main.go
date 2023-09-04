@@ -3,9 +3,10 @@ package main
 import (
 	"context"
 
-	"github.com/aws/aws-lambda-go/lambda"
-	thirteen "golang/pkg/euler/13"
 	"strconv"
+
+	"github.com/aws/aws-lambda-go/lambda"
+	thirteen "github.com/jeffpignataro/golang/pkg/euler/13"
 )
 
 type MyEvent struct {

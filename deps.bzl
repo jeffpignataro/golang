@@ -464,6 +464,13 @@ def go_dependencies():
         version = "v1.1.0",
     )
     go_repository(
+        name = "com_github_jeffpignataro_golang_pkg_webserver",
+        importpath = "github.com/jeffpignataro/golang/pkg/webserver",
+        sum = "h1:BaP/ftkUhQuddWbIpuIpnqQQbI033ulixR4A/I/ldBs=",
+        version = "v0.0.0-20230904160806-584a5c6795cd",
+    )
+
+    go_repository(
         name = "com_github_json_iterator_go",
         build_file_proto_mode = "disable_global",
         importpath = "github.com/json-iterator/go",
