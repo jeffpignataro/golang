@@ -4,8 +4,10 @@ go_library(
     name = "addressbook",
     srcs = ["address_book.pb.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/proto/models/addressbooks/addressbook",
+    tags = ["excluded"],
     visibility = ["//visibility:public"],
     deps = [
+        "//cmd/proto/models/persons/person:person_lib",
         "@org_golang_google_protobuf//reflect/protoreflect",
         "@org_golang_google_protobuf//runtime/protoimpl",
     ],

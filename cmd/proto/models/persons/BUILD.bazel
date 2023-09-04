@@ -12,7 +12,6 @@ go_library(
 proto_library(
     name = "person_proto",
     srcs = ["person.proto"],
-    tags = ["excluded"],
     visibility = ["//visibility:public"],
     deps = ["@com_google_protobuf//:timestamp_proto"],
 )
