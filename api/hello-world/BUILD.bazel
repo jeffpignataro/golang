@@ -1,0 +1,18 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "hello-world_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/jeffpignataro/golang/api/hello-world",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/hello-world",
+        "@com_github_gin_gonic_gin//:gin",
+    ],
+)
+
+go_binary(
+    name = "hello-world",
+    embed = [":hello-world_lib"],
+    visibility = ["//visibility:public"],
+)
