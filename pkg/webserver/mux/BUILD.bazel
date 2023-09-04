@@ -5,4 +5,5 @@ go_library(
     srcs = ["servemux.go"],
     importpath = "github.com/jeffpignataro/golang/pkg/webserver/mux",
     visibility = ["//visibility:public"],
+    deps = ["//pkg/webserver/routing"],
 )

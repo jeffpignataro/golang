@@ -1,4 +1,4 @@
-module golang
+module github.com/jeffpignataro/golang
 
 go 1.20
 
@@ -20,7 +20,6 @@ require (
 	github.com/spf13/viper v1.16.0
 	github.com/urfave/cli/v2 v2.25.7
 	go.uber.org/fx v1.20.0
-	go.uber.org/zap v1.25.0
 	google.golang.org/grpc v1.57.0
 	google.golang.org/grpc/examples v0.0.0-20230825171644-23ac72b6454a
 	google.golang.org/protobuf v1.31.0
@@ -85,6 +84,7 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	go.opencensus.io v0.24.0 // indirect
+	go.uber.org/zap v1.25.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	google.golang.org/api v0.138.0 // indirect
