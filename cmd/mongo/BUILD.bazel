@@ -10,6 +10,6 @@ go_library(
 go_library(
     name = "mongo_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/mongo",
+    importpath = "github.com/jeffpignataro/golang/cmd/mongo",
     visibility = ["//visibility:private"],
 )

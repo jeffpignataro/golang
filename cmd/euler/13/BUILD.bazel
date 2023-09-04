@@ -4,7 +4,7 @@ load("@io_bazel_rules_docker//container:container.bzl", "container_image", "cont
 go_library(
     name = "13_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/euler/13",
+    importpath = "github.com/jeffpignataro/golang/cmd/euler/13",
     visibility = ["//visibility:private"],
 )
 

@@ -5,7 +5,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "proto_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/proto",
+    importpath = "github.com/jeffpignataro/golang/cmd/proto",
     visibility = ["//visibility:private"],
     deps = ["//cmd/proto/models/persons:person"],
 )

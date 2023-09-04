@@ -3,6 +3,6 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "13",
     srcs = ["main.go"],
-    importpath = "golang/pkg/euler/13",
+    importpath = "github.com/jeffpignataro/golang/pkg/euler/13",
     visibility = ["//visibility:public"],
 )

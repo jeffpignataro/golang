@@ -3,6 +3,6 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "subcommand",
     srcs = ["main.go"],
-    importpath = "golang/pkg/subcommand",
+    importpath = "github.com/jeffpignataro/golang/pkg/subcommand",
     visibility = ["//visibility:public"],
 )

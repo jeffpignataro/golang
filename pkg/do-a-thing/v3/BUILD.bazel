@@ -3,6 +3,6 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "do-a-thing",
     srcs = ["main.go"],
-    importpath = "golang/pkg/do-a-thing/v3",
+    importpath = "github.com/jeffpignataro/golang/pkg/do-a-thing/v3",
     visibility = ["//visibility:public"],
 )

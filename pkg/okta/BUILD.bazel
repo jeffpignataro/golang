@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "okta",
     srcs = ["main.go"],
-    importpath = "golang/pkg/okta",
+    importpath = "github.com/jeffpignataro/golang/pkg/okta",
     visibility = ["//visibility:public"],
     deps = ["@com_github_okta_okta_sdk_golang_v2//okta"],
 )

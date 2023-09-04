@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "kubernetes-client",
     srcs = ["main.go"],
-    importpath = "golang/pkg/kubernetes-client",
+    importpath = "github.com/jeffpignataro/golang/pkg/kubernetes-client",
     tags = ["excluded"],
     visibility = ["//visibility:public"],
     deps = [

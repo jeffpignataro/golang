@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "person",
     srcs = ["person.pb.go"],
-    importpath = "golang/cmd/proto/models/persons/person",
+    importpath = "github.com/jeffpignataro/golang/cmd/proto/models/persons/person",
     visibility = ["//visibility:public"],
     deps = [
         "@org_golang_google_protobuf//reflect/protoreflect",

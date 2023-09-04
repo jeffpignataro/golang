@@ -6,4 +6,8 @@ use (
 	./pkg/do-a-thing/v2
 	./pkg/do-a-thing/v3
 	./pkg/hello-world
+	./pkg/helpers
+	./pkg/webserver/endpoints
+	./pkg/webserver/mux
+	./pkg/webserver/routing
 )

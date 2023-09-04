@@ -4,12 +4,9 @@ load("@io_bazel_rules_docker//go:image.bzl", "go_image")
 go_library(
     name = "hello-world-api_lib",
     srcs = ["main.go"],
-    importpath = "golang/src/cmd/examples/hello-world-api",
+    importpath = "github.com/jeffpignataro/golang/src/cmd/examples/hello-world-api",
     visibility = ["//visibility:private"],
-    deps = [
-        "//pkg/examples/hello-world-api",
-        "@org_uber_go_fx//:fx",
-    ],
+    deps = ["@org_uber_go_fx//:fx"],
 )
 
 go_binary(

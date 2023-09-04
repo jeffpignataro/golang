@@ -7,3 +7,11 @@ go_library(
     visibility = ["//visibility:public"],
     deps = ["@com_github_sirupsen_logrus//:logrus"],
 )
+
+go_library(
+    name = "hello-world",
+    srcs = ["hello.go"],
+    importpath = "github.com/jeffpignataro/golang/pkg/hello-world",
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_sirupsen_logrus//:logrus"],
+)

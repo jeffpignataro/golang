@@ -3,6 +3,6 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "helpers",
     srcs = ["strings.go"],
-    importpath = "golang/pkg/helpers",
+    importpath = "github.com/jeffpignataro/golang/pkg/helpers",
     visibility = ["//visibility:public"],
 )

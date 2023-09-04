@@ -10,10 +10,10 @@ import (
 	"go.uber.org/fx/fxevent"
 	"go.uber.org/zap"
 
-	"golang/pkg/helpers"
-	"golang/pkg/webserver/endpoints"
-	"golang/pkg/webserver/mux"
-	"golang/pkg/webserver/routing"
+	"github.com/golang/pkg/helpers"
+	"github.com/golang/pkg/webserver/endpoints"
+	"github.com/golang/pkg/webserver/mux"
+	"github.com/golang/pkg/webserver/routing"
 )
 
 func New() {

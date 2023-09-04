@@ -3,9 +3,8 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "cobra_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/cobra",
+    importpath = "github.com/jeffpignataro/golang/cmd/cobra",
     visibility = ["//visibility:private"],
-    deps = ["//cmd/cobra/cmd"],
 )
 
 go_binary(

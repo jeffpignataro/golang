@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "helloworld",
     srcs = ["helloworld.pb.go"],
-    importpath = "golang/cmd/proto/sample/google.golang.org/grpc/examples/helloworld/helloworld",
+    importpath = "github.com/jeffpignataro/golang/cmd/proto/sample/google.golang.org/grpc/examples/helloworld/helloworld",
     visibility = ["//visibility:public"],
     deps = [
         "@org_golang_google_protobuf//reflect/protoreflect",

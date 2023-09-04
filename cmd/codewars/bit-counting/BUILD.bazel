@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "bit-counting_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/codewars/bit-counting",
+    importpath = "github.com/jeffpignataro/golang/cmd/codewars/bit-counting",
     visibility = ["//visibility:private"],
 )
 

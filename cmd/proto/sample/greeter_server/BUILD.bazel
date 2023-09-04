@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "greeter_server_lib",
     srcs = ["main.go"],
-    importpath = "golang/cmd/proto/sample/greeter_server",
+    importpath = "github.com/jeffpignataro/golang/cmd/proto/sample/greeter_server",
     visibility = ["//visibility:private"],
     deps = [
         "//cmd/proto/sample/helloworld",

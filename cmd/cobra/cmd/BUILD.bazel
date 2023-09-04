@@ -8,7 +8,7 @@ go_library(
         "root.go",
         "version.go",
     ],
-    importpath = "golang/cmd/cobra/cmd",
+    importpath = "github.com/jeffpignataro/golang/cmd/cobra/cmd",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_mitchellh_go_homedir//:go-homedir",
