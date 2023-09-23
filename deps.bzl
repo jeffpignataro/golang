@@ -542,6 +542,12 @@ def go_dependencies():
         sum = "h1:IeQXZAiQcpL9mgcAe1Nu6cX9LLw6ExEHKjN0VQdvPDY=",
         version = "v1.8.7",
     )
+    go_repository(
+        name = "com_github_manifoldco_promptui",
+        importpath = "github.com/manifoldco/promptui",
+        sum = "h1:3V4HzJk1TtXW1MTZMP7mdlwbBpIinw3HztaIlYthEiA=",
+        version = "v0.9.0",
+    )
 
     go_repository(
         name = "com_github_mattn_go_colorable",
