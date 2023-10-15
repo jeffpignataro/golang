@@ -1,0 +1,55 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+load("@rules_oci//oci:defs.bzl", "oci_image", "oci_image_index", "oci_push")
+load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
+
+go_library(
+    name = "gin_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/jeffpignataro/golang/cmd/gin",
+    visibility = ["//visibility:private"],
+    deps = [
+        "@com_github_gin_gonic_gin//:gin",
+        "@org_uber_go_zap//:zap",
+    ],
+)
+
+go_binary(
+    name = "gin",
+    embed = [":gin_lib"],
+    visibility = ["//visibility:public"],
+)
+
+pkg_tar(
+    name = "tar",
+    srcs = [":gin"],
+)
+
+oci_image_index(
+    name = "gin_app_image",
+    images = [
+        ":gin_image_arm64",
+        ":gin_image_amd64",
+    ],
+)
+
+oci_image(
+    name = "gin_image_amd64",
+    base = "@distroless_base",
+    entrypoint = ["/gin"],
+    tars = [":tar"],
+)
+
+oci_image(
+    name = "gin_image_arm64",
+    base = "@distroless_base",
+    entrypoint = ["/gin"],
+    tars = [":tar"],
+)
+
+oci_push(
+    name = "gin_push",
+    image = ":gin_app_image",
+    remote_tags = ["latest"],
+    repository = "devappwest.azurecr.io/gin",
+    tags = ["excluded"],
+)
