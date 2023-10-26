@@ -5,6 +5,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/jeffpignataro/golang/cmd/euler/12",
     visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/log",
+        "@org_uber_go_zap//:zap",
+    ],
 )
 
 go_binary(
