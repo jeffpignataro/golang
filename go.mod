@@ -13,6 +13,7 @@ require (
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v2 v2.0.3
 	github.com/jeffpignataro/golang/pkg/do-a-thing/v3 v3.0.0
 	github.com/jeffpignataro/golang/pkg/hello-world v0.0.3
+	github.com/jeffpignataro/golang/pkg/log v0.0.0-20231026202256-b019ed5fe537
 	github.com/jeffpignataro/golang/pkg/webserver v0.0.0-20230904160806-584a5c6795cd
 	github.com/manifoldco/promptui v0.9.0
 	github.com/mitchellh/go-homedir v1.1.0

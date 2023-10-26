@@ -284,6 +284,8 @@ github.com/jeffpignataro/golang/pkg/hello-world v0.0.3 h1:L6w7S2Gq/Tvz/eX7KG30SM
 github.com/jeffpignataro/golang/pkg/hello-world v0.0.3/go.mod h1:Qn5bmANdOc21XqU411v2eBgiFTUfR+tjQ2wiLN822zo=
 github.com/jeffpignataro/golang/pkg/helpers v0.0.0-20230904160806-584a5c6795cd h1:LiBq18I/+etGMO1isfVK+5VnRAIcTdbgBO+EpJGgu5A=
 github.com/jeffpignataro/golang/pkg/helpers v0.0.0-20230904160806-584a5c6795cd/go.mod h1:tXxePF7puXESAGE/BSUUqtKgiL6xjJINwWv8ZXXquJw=
+github.com/jeffpignataro/golang/pkg/log v0.0.0-20231026202256-b019ed5fe537 h1:y6V2Uo54HXM55g7Ae+4ThjFfshNmbUGqO7xDqE1pjBs=
+github.com/jeffpignataro/golang/pkg/log v0.0.0-20231026202256-b019ed5fe537/go.mod h1:iolv+wDKPyA7DXZ0lkqB4+w6uYODm1E1b1rhQhfaYpk=
 github.com/jeffpignataro/golang/pkg/webserver v0.0.0-20230904160806-584a5c6795cd h1:BaP/ftkUhQuddWbIpuIpnqQQbI033ulixR4A/I/ldBs=
 github.com/jeffpignataro/golang/pkg/webserver v0.0.0-20230904160806-584a5c6795cd/go.mod h1:ZU8fbjaOdn8JTYq4F8a32mDCjLBkjo+xG3uqGMIvwVo=
 github.com/jeffpignataro/golang/pkg/webserver/endpoints v0.0.0-20230904160806-584a5c6795cd h1:z5mgwW9ISsWAKNX85VvKc1FEaSJW+LNatpbE5JPu05U=
