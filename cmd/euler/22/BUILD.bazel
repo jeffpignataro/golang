@@ -1,0 +1,16 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "22_lib",
+    srcs = ["main.go"],
+    embedsrcs = ["names.txt"],
+    importpath = "github.com/jeffpignataro/golang/cmd/euler/22",
+    visibility = ["//visibility:private"],
+    deps = ["//pkg/log"],
+)
+
+go_binary(
+    name = "22",
+    embed = [":22_lib"],
+    visibility = ["//visibility:public"],
+)
