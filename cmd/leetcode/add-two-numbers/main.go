@@ -7,56 +7,66 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func main() {
-	l1 := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-			Next: &ListNode{
-				Val: 2,
-				Next: &ListNode{
-					Val: 2,
-				},
-			},
-		},
+func generateListNode(a []int) *ListNode {
+	var l *ListNode
+
+	for i := len(a) - 1; i >= 0; i-- {
+		l = &ListNode{Val: a[i], Next: l}
 	}
 
-	l2 := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-		},
+	return l
+}
+
+func main() {
+	a1, a2 := []int{9, 9, 9, 9, 9, 9, 9}, []int{9, 9, 9, 9}
+
+	l1 := generateListNode(a1)
+	l2 := generateListNode(a2)
+
+	l := addTwoNumbers(l1, l2)
+
+	for l != nil {
+		fmt.Println(l.Val)
+		l = l.Next
 	}
-	addTwoNumbers(l1, l2)
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	r := &ListNode{}
-	a1, a2 := []int{}, []int{}
-	fmt.Println(getNext(l1))
+	var (
+		l3, l4 *ListNode
+		carry  int
+	)
 
-	a1 = append(a1, getNext(l1).Val)
-	a2 = append(a2, getNext(l2).Val)
+	for l1 != nil || l2 != nil {
+		var sum int
 
-	// v1, v2 := Calculate(l1.Val, l2.Val)
-	// r.Val = v1
+		if l1 != nil {
+			sum += l1.Val
+			l1 = l1.Next
+		}
 
-	fmt.Println(a1)
-	fmt.Println(a2)
-	return r
-}
+		if l2 != nil {
+			sum += l2.Val
+			l2 = l2.Next
+		}
 
-func getNext(l *ListNode) *ListNode {
-	if l != nil {
-		return l.Next
+		sum += carry
+
+		carry = sum / 10
+		sum = sum % 10
+
+		if l3 == nil {
+			l3 = &ListNode{Val: sum}
+			l4 = l3
+		} else {
+			l3.Next = &ListNode{Val: sum}
+			l3 = l3.Next
+		}
 	}
-	return nil
-}
 
-func Calculate(i1, i2 int) (int, int) {
-	r := i1 + i2
-	if r > 9 {
-		return r - 10, 1
+	if carry > 0 {
+		l3.Next = &ListNode{Val: carry}
 	}
-	return r, 0
+
+	return l4
 }
